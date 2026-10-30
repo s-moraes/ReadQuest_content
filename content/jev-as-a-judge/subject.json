@@ -1,8 +1,13 @@
 {
   "id": "jev-as-a-judge",
   "title": "JEV-as-a-Judge: Decision-Only AI Evaluation",
-  "version": 1,
-  "assets": [],
+  "version": 2,
+  "assets": [
+    "assets/jev-settings-providers.webp",
+    "assets/jev-judge-view-batch.webp",
+    "assets/jev-cascade-execution.webp",
+    "assets/jev-human-review-fallback.webp"
+  ],
   "path": [
     {
       "id": "path-jev-1",
@@ -87,6 +92,41 @@
           ]
         }
       ]
+    },
+    {
+      "id": "path-jev-4",
+      "title": "Agent Visualizer: Production Cascade Case Study",
+      "description": "Deconstruct the 3-tier cascade engine in Agent Visualizer: JEV System 1, LLM self-consistency consensus, threshold escalation, and Cohen's Kappa calibration.",
+      "icon": "account_tree",
+      "topics": [
+        {
+          "id": "topic-jev-9",
+          "title": "Agent Visualizer Evaluation Engine & Data Model",
+          "file": "learn/09-agent-visualizer-architecture-and-pipeline.md",
+          "relatedQuizId": "quiz-jev-4",
+          "relatedExtraIds": [
+            "extra-jev-5"
+          ]
+        },
+        {
+          "id": "topic-jev-10",
+          "title": "The 3-Tier Cascade & Consensus Engine",
+          "file": "learn/10-three-tier-cascade-and-consensus.md",
+          "relatedQuizId": "quiz-jev-4",
+          "relatedExtraIds": [
+            "extra-jev-5"
+          ]
+        },
+        {
+          "id": "topic-jev-11",
+          "title": "Empirical Calibration, Cohen's Kappa & JEV Verdict",
+          "file": "learn/11-kappa-calibration-and-human-in-the-loop.md",
+          "relatedQuizId": "quiz-jev-4",
+          "relatedExtraIds": [
+            "extra-jev-5"
+          ]
+        }
+      ]
     }
   ],
   "extras": [
@@ -149,6 +189,21 @@
       "unlockAfterPathId": null,
       "externalUrl": "https://arxiv.org/abs/2609.12345",
       "file": null
+    },
+    {
+      "id": "extra-jev-5",
+      "title": "Deep Dive: Why JEV Confidence 0.55 Triggered Human Review",
+      "summary": "Step-by-step tracing of the cascade logic when JEV returns 0.55 confidence, explaining Tier fallback, self-consistency consensus, and review threshold gating.",
+      "type": "USE_CASE",
+      "tags": [
+        "Cascade",
+        "Debugging",
+        "Case Study"
+      ],
+      "tier": "CORE",
+      "unlockAfterPathId": "path-jev-4",
+      "externalUrl": null,
+      "file": "extra/agent-visualizer-cascade-case-study.md"
     }
   ],
   "quizzes": [
@@ -175,6 +230,14 @@
       "timeLimitMinutes": 5,
       "passPercentage": 70,
       "file": "quiz/production-observability-quiz.md"
+    },
+    {
+      "id": "quiz-jev-4",
+      "title": "Agent Visualizer Cascade & Calibration Assessment",
+      "questionCount": 5,
+      "timeLimitMinutes": 5,
+      "passPercentage": 70,
+      "file": "quiz/agent-visualizer-cascade-quiz.md"
     }
   ]
 }

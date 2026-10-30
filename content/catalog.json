@@ -1,5 +1,5 @@
 {
-  "version": 6,
+  "version": 7,
   "subjects": [
     {
       "id": "system-design",
@@ -33,7 +33,7 @@
       "id": "jev-as-a-judge",
       "title": "JEV-as-a-Judge: Decision-Only AI Evaluation",
       "description": "Decision-only evaluation, calibrated confidence cascades, LLM-as-a-Judge cost reduction, and production AI observability.",
-      "version": 1,
+      "version": 2,
       "path": "content/jev-as-a-judge/subject.json"
     }
   ]
