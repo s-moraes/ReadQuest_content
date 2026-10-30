@@ -1,0 +1,267 @@
+{
+  "id": "system-design",
+  "title": "System Design & Architecture",
+  "version": 2,
+  "assets": [
+    "assets/url-shortener.webp",
+    "assets/scalability-diagram.webp"
+  ],
+  "path": [
+    {
+      "id": "path-sd-1",
+      "title": "Foundations of Distributed Systems",
+      "description": "Core distributed properties, network latency, fallacies, and consensus theorems.",
+      "icon": "hub",
+      "topics": [
+        {
+          "id": "topic-sd-1-1",
+          "title": "Distributed Systems Overview",
+          "file": "learn/01-distributed-systems-overview.md"
+        },
+        {
+          "id": "topic-sd-1-2",
+          "title": "Network Latency & Fallacies",
+          "file": "learn/02-network-latency-and-fallacies.md",
+          "relatedExtraIds": [
+            "extra-sd-5"
+          ]
+        },
+        {
+          "id": "topic-sd-1-3",
+          "title": "CAP & PACELC Theorems",
+          "file": "learn/03-cap-and-pacelc-theorems.md",
+          "relatedQuizId": "quiz-sd-1",
+          "relatedExtraIds": [
+            "extra-sd-4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-sd-2",
+      "title": "Scaling & Load Balancing",
+      "description": "Horizontal scale, stateless design, load balancers, reverse proxies, and CDNs.",
+      "icon": "swap",
+      "topics": [
+        {
+          "id": "topic-sd-2-1",
+          "title": "Horizontal vs Vertical Scaling",
+          "file": "learn/04-horizontal-vs-vertical-scaling.md",
+          "relatedQuizId": "quiz-sd-1",
+          "relatedExtraIds": [
+            "extra-sd-1"
+          ]
+        },
+        {
+          "id": "topic-sd-2-2",
+          "title": "Load Balancing Algorithms",
+          "file": "learn/05-load-balancing-algorithms.md",
+          "relatedQuizId": "quiz-sd-2"
+        },
+        {
+          "id": "topic-sd-2-3",
+          "title": "Reverse Proxies & CDNs",
+          "file": "learn/06-reverse-proxies-and-cdns.md"
+        }
+      ]
+    },
+    {
+      "id": "path-sd-3",
+      "title": "APIs & Communication Protocols",
+      "description": "How clients and services communicate: REST, gRPC, WebSockets, and Message Queues.",
+      "icon": "tree",
+      "topics": [
+        {
+          "id": "topic-sd-3-1",
+          "title": "RESTful Architecture Patterns & Modern APIs",
+          "file": "learn/07-api-paradigms-rest-grpc-graphql.md"
+        },
+        {
+          "id": "topic-sd-3-2",
+          "title": "WebSockets & Server-Sent Events",
+          "file": "learn/08-websockets-and-sse.md",
+          "relatedExtraIds": [
+            "extra-sd-3"
+          ]
+        },
+        {
+          "id": "topic-sd-3-3",
+          "title": "Message Brokers & Pub/Sub",
+          "file": "learn/09-message-brokers-and-event-queues.md",
+          "relatedExtraIds": [
+            "extra-sd-2"
+          ]
+        },
+        {
+          "id": "topic-sd-3-4",
+          "title": "API Gateways & Edge Routing",
+          "file": "learn/10-api-gateways-and-rate-limiting.md"
+        }
+      ]
+    },
+    {
+      "id": "path-sd-4",
+      "title": "Storage, Caching & Data Partitioning",
+      "description": "Relational vs NoSQL, in-memory caching, replication, sharding, and consensus.",
+      "icon": "tree",
+      "topics": [
+        {
+          "id": "topic-sd-4-1",
+          "title": "Relational vs NoSQL Storage",
+          "file": "learn/11-relational-vs-nosql-databases.md"
+        },
+        {
+          "id": "topic-sd-4-2",
+          "title": "In-Memory Caching & Invalidation",
+          "file": "learn/12-distributed-caching-and-invalidation.md",
+          "relatedQuizId": "quiz-sd-3"
+        },
+        {
+          "id": "topic-sd-4-3",
+          "title": "Database Replication & Consistency",
+          "file": "learn/13-database-replication-strategies.md"
+        },
+        {
+          "id": "topic-sd-4-4",
+          "title": "Database Sharding & Partitioning",
+          "file": "learn/14-database-sharding-and-partitioning.md",
+          "relatedQuizId": "quiz-sd-4"
+        },
+        {
+          "id": "topic-sd-4-5",
+          "title": "Distributed Consensus & Eventual Consistency",
+          "file": "learn/15-consensus-and-eventual-consistency.md",
+          "relatedExtraIds": [
+            "extra-sd-6"
+          ]
+        }
+      ]
+    }
+  ],
+  "extras": [
+    {
+      "id": "extra-sd-1",
+      "title": "Design a URL Shortener",
+      "summary": "Map billions of long URLs to short, unique keys — and redirect in milliseconds.",
+      "type": "USE_CASE",
+      "tags": [
+        "Hashing",
+        "Key-Value",
+        "Base62"
+      ],
+      "tier": "FREE",
+      "unlockAfterPathId": null,
+      "externalUrl": null,
+      "file": "extra/url-shortener.md"
+    },
+    {
+      "id": "extra-sd-2",
+      "title": "Design a News Feed",
+      "summary": "Assemble a personalised, ranked timeline for hundreds of millions of users.",
+      "type": "USE_CASE",
+      "tags": [
+        "Fan-out",
+        "Timeline",
+        "PubSub"
+      ],
+      "tier": "FREE",
+      "unlockAfterPathId": null,
+      "externalUrl": null,
+      "file": "extra/news-feed.md"
+    },
+    {
+      "id": "extra-sd-3",
+      "title": "Design a Chat System",
+      "summary": "Deliver messages in real time with presence, ordering, and offline delivery.",
+      "type": "USE_CASE",
+      "tags": [
+        "WebSocket",
+        "Ordering",
+        "Real-time"
+      ],
+      "tier": "CORE",
+      "unlockAfterPathId": "path-sd-3",
+      "externalUrl": null,
+      "file": "extra/chat-system.md"
+    },
+    {
+      "id": "extra-sd-4",
+      "title": "The Origin of CAP Theorem",
+      "summary": "How Eric Brewer's 2000 keynote changed distributed database design forever.",
+      "type": "HISTORY",
+      "tags": [
+        "CAP",
+        "Brewer",
+        "Consensus"
+      ],
+      "tier": "FREE",
+      "unlockAfterPathId": null,
+      "externalUrl": null,
+      "file": "extra/cap-history.md"
+    },
+    {
+      "id": "extra-sd-5",
+      "title": "Fallacies of Distributed Computing",
+      "summary": "The 8 flawed assumptions engineers make about networked environments.",
+      "type": "CURIOSITY",
+      "tags": [
+        "Network",
+        "Latency",
+        "Topology"
+      ],
+      "tier": "FREE",
+      "unlockAfterPathId": null,
+      "externalUrl": null,
+      "file": "extra/fallacies.md"
+    },
+    {
+      "id": "extra-sd-6",
+      "title": "Designing Data-Intensive Applications",
+      "summary": "Martin Kleppmann's landmark book on reliable and scalable architectures.",
+      "type": "EXTERNAL_LINK",
+      "tags": [
+        "Reference",
+        "O'Reilly",
+        "Architecture"
+      ],
+      "tier": "FREE",
+      "unlockAfterPathId": null,
+      "externalUrl": "https://dataintensive.net",
+      "file": null
+    }
+  ],
+  "quizzes": [
+    {
+      "id": "quiz-sd-1",
+      "title": "Scalability & Performance",
+      "questionCount": 5,
+      "timeLimitMinutes": 5,
+      "passPercentage": 70,
+      "file": "quiz/dist-sys-quiz.md"
+    },
+    {
+      "id": "quiz-sd-2",
+      "title": "Load Balancing Strategies",
+      "questionCount": 4,
+      "timeLimitMinutes": 4,
+      "passPercentage": 65,
+      "file": "quiz/load-balancing-quiz.md"
+    },
+    {
+      "id": "quiz-sd-3",
+      "title": "Caching & Invalidation",
+      "questionCount": 4,
+      "timeLimitMinutes": 5,
+      "passPercentage": 70,
+      "file": "quiz/caching-quiz.md"
+    },
+    {
+      "id": "quiz-sd-4",
+      "title": "Database Sharding & Replication",
+      "questionCount": 4,
+      "timeLimitMinutes": 5,
+      "passPercentage": 75,
+      "file": "quiz/sharding-quiz.md"
+    }
+  ]
+}

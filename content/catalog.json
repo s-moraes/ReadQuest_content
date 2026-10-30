@@ -1,0 +1,33 @@
+{
+  "version": 5,
+  "subjects": [
+    {
+      "id": "system-design",
+      "title": "System Design & Architecture",
+      "description": "Distributed systems, scalability, load balancing, caching, and database architecture.",
+      "version": 2,
+      "path": "content/system-design/subject.json"
+    },
+    {
+      "id": "java-foundations",
+      "title": "Prep4Java: Foundations",
+      "description": "Java language syntax, OOP constructs, collections, exceptions, and certification preparation.",
+      "version": 1,
+      "path": "content/java-foundations/subject.json"
+    },
+    {
+      "id": "flyway-migrations",
+      "title": "Database Migrations with Flyway",
+      "description": "Schema evolution, versioned migrations, repeatable scripts, CI/CD integration, and zero-downtime practices.",
+      "version": 1,
+      "path": "content/flyway-migrations/subject.json"
+    },
+    {
+      "id": "cloud-native-concurrency",
+      "title": "Cloud-Native Concurrency & State",
+      "description": "Microservices state handling, distributed coordination, cloud database locks, actor toolkits, and reactive parallelism.",
+      "version": 2,
+      "path": "content/cloud-native-concurrency/subject.json"
+    }
+  ]
+}

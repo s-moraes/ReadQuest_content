@@ -1,0 +1,169 @@
+{
+  "id": "cloud-native-concurrency",
+  "title": "Cloud-Native Concurrency & State",
+  "version": 2,
+  "assets": [],
+  "path": [
+    {
+      "id": "state-and-persistence",
+      "title": "State Management & Database Concurrency",
+      "description": "Stateless design, distributed session sherpas, CQRS/Event Sourcing, and cloud concurrency locking.",
+      "icon": "hub",
+      "topics": [
+        {
+          "id": "topic-cnc-1",
+          "title": "Managing State in Microservices",
+          "file": "learn/01-microservices-state-and-sessions.md",
+          "relatedQuizId": "quiz-cnc-1",
+          "relatedExtraIds": [
+            "extra-cnc-1",
+            "extra-cnc-3"
+          ]
+        },
+        {
+          "id": "topic-cnc-2",
+          "title": "Cloud Database Concurrency & Locking",
+          "file": "learn/02-cloud-database-concurrency.md",
+          "relatedQuizId": "quiz-cnc-1"
+        }
+      ]
+    },
+    {
+      "id": "parallelism-and-toolkits",
+      "title": "Big Data Parallelism & Concurrency Toolkits",
+      "description": "Scale across clusters using MapReduce, Spark, and modern actor and reactive frameworks.",
+      "icon": "swap_horiz",
+      "topics": [
+        {
+          "id": "topic-cnc-3",
+          "title": "Parallelism in Big Data & Stream Processing",
+          "file": "learn/03-big-data-parallelism.md",
+          "relatedQuizId": "quiz-cnc-2"
+        },
+        {
+          "id": "topic-cnc-4",
+          "title": "Cloud-Native Concurrency Toolkits",
+          "file": "learn/04-cloud-concurrency-toolkits.md",
+          "relatedQuizId": "quiz-cnc-2",
+          "relatedExtraIds": [
+            "extra-cnc-2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "coordination-and-reactive",
+      "title": "Distributed Coordination & Modern Async Patterns",
+      "description": "Master consensus primitives, ZooKeeper/etcd, Reactive Streams, and tool selection trade-offs.",
+      "icon": "account_tree",
+      "topics": [
+        {
+          "id": "topic-cnc-5",
+          "title": "Distributed Coordination & Consensus Primitives",
+          "file": "learn/05-distributed-coordination.md",
+          "relatedQuizId": "quiz-cnc-3"
+        },
+        {
+          "id": "topic-cnc-6",
+          "title": "Reactive Streams & Architecture Decision Matrix",
+          "file": "learn/06-modern-async-patterns-and-selection.md",
+          "relatedQuizId": "quiz-cnc-3",
+          "relatedExtraIds": [
+            "extra-cnc-4"
+          ]
+        }
+      ]
+    }
+  ],
+  "extras": [
+    {
+      "id": "extra-cnc-1",
+      "title": "Event-Sourced Banking Service with Axon",
+      "summary": "Implement an append-only transaction ledger with CQRS and event sourcing to eliminate distributed locking.",
+      "type": "USE_CASE",
+      "tags": [
+        "CQRS",
+        "EventSourcing",
+        "Axon"
+      ],
+      "tier": "FREE",
+      "unlockAfterPathId": null,
+      "externalUrl": null,
+      "file": "extra/event-sourcing-axon.md"
+    },
+    {
+      "id": "extra-cnc-2",
+      "title": "Actor Model vs Event Loop Under the Hood",
+      "summary": "How Akka mailboxes and Vert.x multi-reactor event loops avoid thread contention at scale.",
+      "type": "CURIOSITY",
+      "tags": [
+        "Akka",
+        "Vertx",
+        "Concurrency"
+      ],
+      "tier": "CORE",
+      "unlockAfterPathId": "state-and-persistence",
+      "externalUrl": null,
+      "file": "extra/actor-vs-event-loop.md"
+    },
+    {
+      "id": "extra-cnc-3",
+      "title": "The Evolution of Distributed State",
+      "summary": "From Two-Phase Commit (2PC) and distributed transactions to Sagas and Eventual Consistency.",
+      "type": "HISTORY",
+      "tags": [
+        "History",
+        "Saga",
+        "2PC"
+      ],
+      "tier": "FREE",
+      "unlockAfterPathId": null,
+      "externalUrl": null,
+      "file": "extra/distributed-state-evolution.md"
+    },
+    {
+      "id": "extra-cnc-4",
+      "title": "Reactive Streams Specification",
+      "summary": "The official standard for asynchronous stream processing with non-blocking backpressure on the JVM.",
+      "type": "EXTERNAL_LINK",
+      "tags": [
+        "Reactive",
+        "JVM",
+        "Standard"
+      ],
+      "tier": "FREE",
+      "unlockAfterPathId": null,
+      "externalUrl": "https://www.reactive-streams.org/",
+      "file": null
+    }
+  ],
+  "quizzes": [
+    {
+      "id": "quiz-cnc-1",
+      "title": "Microservices State & Cloud DB Concurrency",
+      "relatedPathId": "state-and-persistence",
+      "questionCount": 5,
+      "timeLimitMinutes": 5,
+      "passPercentage": 70,
+      "file": "quiz/state-concurrency-quiz.md"
+    },
+    {
+      "id": "quiz-cnc-2",
+      "title": "Big Data Parallelism & Concurrency Toolkits",
+      "relatedPathId": "parallelism-and-toolkits",
+      "questionCount": 5,
+      "timeLimitMinutes": 5,
+      "passPercentage": 70,
+      "file": "quiz/toolkits-parallelism-quiz.md"
+    },
+    {
+      "id": "quiz-cnc-3",
+      "title": "Distributed Coordination & Reactive Architecture",
+      "relatedPathId": "coordination-and-reactive",
+      "questionCount": 5,
+      "timeLimitMinutes": 5,
+      "passPercentage": 70,
+      "file": "quiz/coordination-reactive-quiz.md"
+    }
+  ]
+}

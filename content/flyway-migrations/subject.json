@@ -1,0 +1,164 @@
+{
+  "id": "flyway-migrations",
+  "title": "Database Migrations with Flyway",
+  "version": 1,
+  "assets": [],
+  "path": [
+    {
+      "id": "flyway-fundamentals",
+      "title": "Core Concepts & Architecture",
+      "description": "Understand why database schema evolution matters, how Flyway tracks history, and migration naming conventions.",
+      "icon": "hub",
+      "topics": [
+        {
+          "id": "topic-fw-1",
+          "title": "Introduction to Database Migrations",
+          "file": "learn/01-intro-to-migrations.md",
+          "relatedQuizId": "quiz-fw-1",
+          "relatedExtraIds": [
+            "extra-fw-3"
+          ]
+        },
+        {
+          "id": "topic-fw-2",
+          "title": "How Flyway Works Under the Hood",
+          "file": "learn/02-how-flyway-works.md",
+          "relatedExtraIds": [
+            "extra-fw-2"
+          ]
+        },
+        {
+          "id": "topic-fw-3",
+          "title": "Migration Types & Naming Conventions",
+          "file": "learn/03-migration-types-naming.md",
+          "relatedQuizId": "quiz-fw-1"
+        }
+      ]
+    },
+    {
+      "id": "flyway-in-practice",
+      "title": "Commands, Build Tools & Java Integration",
+      "description": "Execute CLI lifecycle commands, configure Gradle/Maven plugins, and run programmatic Java migrations in Spring Boot.",
+      "icon": "account_tree",
+      "topics": [
+        {
+          "id": "topic-fw-4",
+          "title": "Flyway Commands & CLI Tooling",
+          "file": "learn/04-flyway-commands-cli.md",
+          "relatedQuizId": "quiz-fw-1"
+        },
+        {
+          "id": "topic-fw-5",
+          "title": "Spring Boot & Java-Based Migrations",
+          "file": "learn/05-spring-boot-and-java.md",
+          "relatedQuizId": "quiz-fw-2"
+        }
+      ]
+    },
+    {
+      "id": "flyway-advanced",
+      "title": "Production Operations & Zero-Downtime",
+      "description": "Implement expand/contract patterns, repair broken migrations, baseline legacy databases, and manage CI/CD pipelines.",
+      "icon": "swap_horiz",
+      "topics": [
+        {
+          "id": "topic-fw-6",
+          "title": "Zero-Downtime Schema Evolution",
+          "file": "learn/06-zero-downtime-migrations.md",
+          "relatedQuizId": "quiz-fw-2",
+          "relatedExtraIds": [
+            "extra-fw-1"
+          ]
+        },
+        {
+          "id": "topic-fw-7",
+          "title": "Repairing, Baselining & Troubleshooting",
+          "file": "learn/07-repair-and-baselining.md",
+          "relatedQuizId": "quiz-fw-2"
+        }
+      ]
+    }
+  ],
+  "extras": [
+    {
+      "id": "extra-fw-1",
+      "title": "Zero-Downtime Blue-Green Pipeline",
+      "summary": "Step-by-step CI/CD architecture for deploying database migrations alongside backward-compatible application releases.",
+      "type": "USE_CASE",
+      "tags": [
+        "CI/CD",
+        "PostgreSQL",
+        "ZeroDowntime"
+      ],
+      "tier": "FREE",
+      "unlockAfterPathId": null,
+      "externalUrl": null,
+      "file": "extra/zero-downtime-pipeline.md"
+    },
+    {
+      "id": "extra-fw-2",
+      "title": "CRC32 Checksum Traps & Line Endings",
+      "summary": "How Flyway computes checksums, why Windows CRLF vs Linux LF breaks deployments, and how to safeguard CI runners.",
+      "type": "CURIOSITY",
+      "tags": [
+        "Internals",
+        "Checksum",
+        "Troubleshooting"
+      ],
+      "tier": "CORE",
+      "unlockAfterPathId": "flyway-fundamentals",
+      "externalUrl": null,
+      "file": "extra/checksum-internals.md"
+    },
+    {
+      "id": "extra-fw-3",
+      "title": "Evolution of Database Migrations",
+      "summary": "From manual DBA runbooks and manual staging scripts to code-driven evolutionary database design.",
+      "type": "HISTORY",
+      "tags": [
+        "DevOps",
+        "DatabaseHistory",
+        "Evolution"
+      ],
+      "tier": "FREE",
+      "unlockAfterPathId": null,
+      "externalUrl": null,
+      "file": "extra/migration-evolution.md"
+    },
+    {
+      "id": "extra-fw-4",
+      "title": "Official Flyway Documentation",
+      "summary": "Official Redgate Flyway product guides, configuration references, and database compatibility matrices.",
+      "type": "EXTERNAL_LINK",
+      "tags": [
+        "Docs",
+        "Reference",
+        "Redgate"
+      ],
+      "tier": "FREE",
+      "unlockAfterPathId": null,
+      "externalUrl": "https://documentation.red-gate.com/fd",
+      "file": null
+    }
+  ],
+  "quizzes": [
+    {
+      "id": "quiz-fw-1",
+      "title": "Flyway Fundamentals & Lifecycle",
+      "relatedPathId": "flyway-fundamentals",
+      "questionCount": 5,
+      "timeLimitMinutes": 5,
+      "passPercentage": 70,
+      "file": "quiz/flyway-core-quiz.md"
+    },
+    {
+      "id": "quiz-fw-2",
+      "title": "Advanced Migrations & Production Operations",
+      "relatedPathId": "flyway-advanced",
+      "questionCount": 5,
+      "timeLimitMinutes": 5,
+      "passPercentage": 70,
+      "file": "quiz/flyway-advanced-quiz.md"
+    }
+  ]
+}
