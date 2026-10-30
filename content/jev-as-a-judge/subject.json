@@ -1,0 +1,180 @@
+{
+  "id": "jev-as-a-judge",
+  "title": "JEV-as-a-Judge: Decision-Only AI Evaluation",
+  "version": 1,
+  "assets": [],
+  "path": [
+    {
+      "id": "path-jev-1",
+      "title": "Foundations of AI Evaluation & JEV",
+      "description": "The LLM-as-a-Judge crisis, decision-only architecture, logit extraction, and probability calibration.",
+      "icon": "hub",
+      "topics": [
+        {
+          "id": "topic-jev-1",
+          "title": "The LLM-as-a-Judge Dilemma & Generative Cost",
+          "file": "learn/01-llm-judge-dilemma-and-cost.md",
+          "relatedQuizId": "quiz-jev-1",
+          "relatedExtraIds": [
+            "extra-jev-3"
+          ]
+        },
+        {
+          "id": "topic-jev-2",
+          "title": "Decision-Only Evaluation Architecture",
+          "file": "learn/02-decision-only-architecture.md",
+          "relatedQuizId": "quiz-jev-1"
+        },
+        {
+          "id": "topic-jev-3",
+          "title": "Probability Calibration & Confidence Estimation",
+          "file": "learn/03-probability-calibration-and-confidence.md",
+          "relatedQuizId": "quiz-jev-1",
+          "relatedExtraIds": [
+            "extra-jev-2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-jev-2",
+      "title": "Cascaded Architectures & Selective Prediction",
+      "description": "Accept when confident, escalate when unsure, RAG grounding, pairwise preference, and adversarial traps.",
+      "icon": "swap",
+      "topics": [
+        {
+          "id": "topic-jev-4",
+          "title": "Accept When Confident, Escalate When Unsure",
+          "file": "learn/04-confidence-cascade-pattern.md",
+          "relatedQuizId": "quiz-jev-2",
+          "relatedExtraIds": [
+            "extra-jev-1"
+          ]
+        },
+        {
+          "id": "topic-jev-5",
+          "title": "RAG Grounding & Pairwise Preference Scoring",
+          "file": "learn/05-rag-grounding-and-preference.md",
+          "relatedQuizId": "quiz-jev-2"
+        },
+        {
+          "id": "topic-jev-6",
+          "title": "Style Adversarials & Multi-Step Reasoning Limits",
+          "file": "learn/06-adversarial-traps-and-reasoning-limits.md",
+          "relatedQuizId": "quiz-jev-2"
+        }
+      ]
+    },
+    {
+      "id": "path-jev-3",
+      "title": "Production Operations & Observability",
+      "description": "Real-time guardrails, telemetry integration, CI/CD regression gates, and the active learning flywheel.",
+      "icon": "tree",
+      "topics": [
+        {
+          "id": "topic-jev-7",
+          "title": "Real-Time Guardrails & LLM Observability",
+          "file": "learn/07-realtime-guardrails-and-observability.md",
+          "relatedQuizId": "quiz-jev-3"
+        },
+        {
+          "id": "topic-jev-8",
+          "title": "CI/CD Regression Testing & Offline Benchmarking",
+          "file": "learn/08-cicd-benchmarking-and-evals.md",
+          "relatedQuizId": "quiz-jev-3",
+          "relatedExtraIds": [
+            "extra-jev-4"
+          ]
+        }
+      ]
+    }
+  ],
+  "extras": [
+    {
+      "id": "extra-jev-1",
+      "title": "Building a Two-Tier Escalation Pipeline in Python",
+      "summary": "Implement an asynchronous cascade that routes confident predictions through JEV and escalates edge cases to frontier reasoning LLMs.",
+      "type": "USE_CASE",
+      "tags": [
+        "Python",
+        "Pipeline",
+        "Cascade"
+      ],
+      "tier": "FREE",
+      "unlockAfterPathId": null,
+      "externalUrl": null,
+      "file": "extra/two-tier-pipeline.md"
+    },
+    {
+      "id": "extra-jev-2",
+      "title": "The Mathematics of Expected Calibration Error (ECE)",
+      "summary": "Mathematical derivation of reliability binning, Brier scores, and temperature scaling for probabilistic classifiers.",
+      "type": "CURIOSITY",
+      "tags": [
+        "Math",
+        "Calibration",
+        "ECE"
+      ],
+      "tier": "CORE",
+      "unlockAfterPathId": "path-jev-1",
+      "externalUrl": null,
+      "file": "extra/expected-calibration-error.md"
+    },
+    {
+      "id": "extra-jev-3",
+      "title": "The Evolution of Model Evaluation: From BLEU to JEV",
+      "summary": "How automated NLP evaluation evolved from syntactic n-grams (BLEU) to dense vectors (BERTScore), generative judges, and calibrated cascades.",
+      "type": "HISTORY",
+      "tags": [
+        "History",
+        "NLP",
+        "Benchmarks"
+      ],
+      "tier": "FREE",
+      "unlockAfterPathId": null,
+      "externalUrl": null,
+      "file": "extra/eval-evolution.md"
+    },
+    {
+      "id": "extra-jev-4",
+      "title": "JEV-as-a-Judge Research Paper",
+      "summary": "Original research paper on decision-only evaluation, calibrated confidence, and selective prediction cascades.",
+      "type": "EXTERNAL_LINK",
+      "tags": [
+        "Paper",
+        "Arxiv",
+        "Research"
+      ],
+      "tier": "FREE",
+      "unlockAfterPathId": null,
+      "externalUrl": "https://arxiv.org/abs/2609.12345",
+      "file": null
+    }
+  ],
+  "quizzes": [
+    {
+      "id": "quiz-jev-1",
+      "title": "Foundations of Decision-Only Evaluation",
+      "questionCount": 5,
+      "timeLimitMinutes": 5,
+      "passPercentage": 70,
+      "file": "quiz/foundations-quiz.md"
+    },
+    {
+      "id": "quiz-jev-2",
+      "title": "Cascades, Calibration & Adversarial Guardrails",
+      "questionCount": 5,
+      "timeLimitMinutes": 5,
+      "passPercentage": 70,
+      "file": "quiz/cascades-guardrails-quiz.md"
+    },
+    {
+      "id": "quiz-jev-3",
+      "title": "Production LLM Observability & Testing",
+      "questionCount": 5,
+      "timeLimitMinutes": 5,
+      "passPercentage": 70,
+      "file": "quiz/production-observability-quiz.md"
+    }
+  ]
+}

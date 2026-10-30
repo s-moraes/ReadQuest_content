@@ -1,5 +1,5 @@
 {
-  "version": 5,
+  "version": 6,
   "subjects": [
     {
       "id": "system-design",
@@ -28,6 +28,13 @@
       "description": "Microservices state handling, distributed coordination, cloud database locks, actor toolkits, and reactive parallelism.",
       "version": 2,
       "path": "content/cloud-native-concurrency/subject.json"
+    },
+    {
+      "id": "jev-as-a-judge",
+      "title": "JEV-as-a-Judge: Decision-Only AI Evaluation",
+      "description": "Decision-only evaluation, calibrated confidence cascades, LLM-as-a-Judge cost reduction, and production AI observability.",
+      "version": 1,
+      "path": "content/jev-as-a-judge/subject.json"
     }
   ]
 }
