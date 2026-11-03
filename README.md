@@ -3,8 +3,8 @@
 [![Validate Content Integrity](https://github.com/s-moraes/ReadQuest_content/actions/workflows/validate-content.yml/badge.svg)](https://github.com/s-moraes/ReadQuest_content/actions/workflows/validate-content.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Subjects](https://img.shields.io/badge/Subjects-5-success.svg)](#-available-subjects)
-[![Topics](https://img.shields.io/badge/Topics-54-informational.svg)](#-available-subjects)
-[![Quizzes](https://img.shields.io/badge/Quizzes-18-purple.svg)](#-available-subjects)
+[![Topics](https://img.shields.io/badge/Topics-60-informational.svg)](#-available-subjects)
+[![Quizzes](https://img.shields.io/badge/Quizzes-20-purple.svg)](#-available-subjects)
 [![Target App](https://img.shields.io/badge/App-ReadQuest-orange.svg)](https://github.com/s-moraes/ReadQuest)
 
 Official and curated technical study material designed specifically for **[ReadQuest](https://github.com/s-moraes/ReadQuest)** (`com.saulo.readquest`), an offline-first native Android study hub built with Jetpack Compose.
@@ -34,9 +34,9 @@ This repository hosts structured learning paths, architectural case studies, dee
 | **Prep4Java: Foundations** | `java-foundations` | 4 | 18 | 6 | 4 | Java syntax, memory model, loops, operators, collections, exceptions, and certification preparation. |
 | **Database Migrations with Flyway** | `flyway-migrations` | 3 | 7 | 2 | 4 | Schema evolution, versioned migrations, repeatable scripts, Spring Boot integration, and zero-downtime practices. |
 | **Cloud-Native Concurrency & State** | `cloud-native-concurrency` | 2 | 6 | 3 | 4 | Microservices state handling, distributed coordination, cloud database locks, actor toolkits, and reactive parallelism. |
-| **JEV-as-a-Judge: Decision-Only AI Evaluation** | `jev-as-a-judge` | 2 | 8 | 3 | 4 | Decision-only evaluation, calibrated confidence cascades, LLM-as-a-Judge cost reduction, and production AI observability. |
+| **JEV-as-a-Judge: Decision-Only AI Evaluation** | `jev-as-a-judge` | 5 | 14 | 5 | 5 | Decision-only evaluation, calibrated confidence cascades, LLM-as-a-Judge cost reduction, production AI observability, and CMU empirical benchmarks. |
 
-**Total:** 5 Complete Subjects • 54 In-Depth Lessons • 18 Self-Paced Quizzes • 22 Real-World Extras & Case Studies
+**Total:** 5 Complete Subjects • 60 In-Depth Lessons • 20 Self-Paced Quizzes • 23 Real-World Extras & Case Studies
 
 ---
 

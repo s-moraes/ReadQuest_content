@@ -1,7 +1,7 @@
 {
   "id": "jev-as-a-judge",
   "title": "JEV-as-a-Judge: Decision-Only AI Evaluation",
-  "version": 2,
+  "version": 3,
   "assets": [
     "assets/jev-settings-providers.webp",
     "assets/jev-judge-view-batch.webp",
@@ -127,6 +127,41 @@
           ]
         }
       ]
+    },
+    {
+      "id": "path-jev-5",
+      "title": "The CMU Benchmark: Empirical Science & Operating Envelopes",
+      "description": "Empirical evaluation from Carnegie Mellon University (Li et al., 2026): 17 model comparators, the 9-workload operating envelope, style-adversarial degradation, bilateral cascades, and calibration transfer limits.",
+      "icon": "science",
+      "topics": [
+        {
+          "id": "topic-jev-12",
+          "title": "The 17-Model Benchmark & Operational Trade-offs",
+          "file": "learn/12-cmu-17-model-benchmark-and-cost.md",
+          "relatedQuizId": "quiz-jev-5",
+          "relatedExtraIds": [
+            "extra-jev-4"
+          ]
+        },
+        {
+          "id": "topic-jev-13",
+          "title": "The JEV Operating Envelope & Style Adversarials",
+          "file": "learn/13-operating-envelope-and-adversarial-style.md",
+          "relatedQuizId": "quiz-jev-5",
+          "relatedExtraIds": [
+            "extra-jev-4"
+          ]
+        },
+        {
+          "id": "topic-jev-14",
+          "title": "Empirical Cascades & Calibration Transfer Limits",
+          "file": "learn/14-frozen-cascades-and-calibration-limits.md",
+          "relatedQuizId": "quiz-jev-5",
+          "relatedExtraIds": [
+            "extra-jev-4"
+          ]
+        }
+      ]
     }
   ],
   "extras": [
@@ -177,18 +212,19 @@
     },
     {
       "id": "extra-jev-4",
-      "title": "JEV-as-a-Judge Research Paper",
-      "summary": "Original research paper on decision-only evaluation, calibrated confidence, and selective prediction cascades.",
-      "type": "EXTERNAL_LINK",
+      "title": "CMU Research Paper: Empirical Evaluation & Cascades",
+      "summary": "Deep dive into the seminal Carnegie Mellon University paper (Li et al., 2026): empirical findings across 17 models, blinded human adjudication, operating envelopes, and calibration dynamics.",
+      "type": "USE_CASE",
       "tags": [
         "Paper",
-        "Arxiv",
-        "Research"
+        "CMU",
+        "Benchmark",
+        "Cascade"
       ],
-      "tier": "FREE",
-      "unlockAfterPathId": null,
-      "externalUrl": "https://arxiv.org/abs/2609.12345",
-      "file": null
+      "tier": "CORE",
+      "unlockAfterPathId": "path-jev-5",
+      "externalUrl": "https://arxiv.org/abs/2609.26550",
+      "file": "extra/cmu-research-paper-deep-dive.md"
     },
     {
       "id": "extra-jev-5",
@@ -238,6 +274,14 @@
       "timeLimitMinutes": 5,
       "passPercentage": 70,
       "file": "quiz/agent-visualizer-cascade-quiz.md"
+    },
+    {
+      "id": "quiz-jev-5",
+      "title": "CMU Benchmark & Operating Envelope Assessment",
+      "questionCount": 5,
+      "timeLimitMinutes": 5,
+      "passPercentage": 70,
+      "file": "quiz/cmu-benchmark-empirical-quiz.md"
     }
   ]
 }
