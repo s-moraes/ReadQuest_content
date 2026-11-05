@@ -1,0 +1,217 @@
+{
+  "id": "hexagonal-architecture-java",
+  "title": "Designing Hexagonal Architecture with Java",
+  "version": 1,
+  "assets": [
+    "assets/hexagonal-architecture-full.webp",
+    "assets/domain-hexagon.webp",
+    "assets/application-hexagon.webp",
+    "assets/framework-hexagon.webp",
+    "assets/driving-operations-lifecycle.webp",
+    "assets/driven-operations-lifecycle.webp",
+    "assets/domain-entities-aggregates.webp",
+    "assets/ports-and-adapters-flow.webp",
+    "assets/request-lifecycle-flow.webp",
+    "assets/telco-network-topology.webp",
+    "assets/jpms-hexagonal-modules.webp",
+    "assets/quarkus-hexagonal-bootstrap.webp",
+    "assets/reactive-vs-imperative-model.webp",
+    "assets/kubernetes-deployment-architecture.webp",
+    "assets/ddd-bounded-contexts.webp"
+  ],
+  "path": [
+    {
+      "id": "hexagonal-fundamentals",
+      "title": "Hexagonal Architecture Fundamentals",
+      "description": "Understand technical debt, concentric hexagons, domain purity, use cases, ports, and driving vs driven operations.",
+      "icon": "hub",
+      "topics": [
+        {
+          "id": "topic-hex-1",
+          "title": "Core Principles & The Three Hexagons",
+          "file": "learn/01-core-principles-and-hexagons.md",
+          "relatedQuizId": "quiz-hex-fundamentals",
+          "relatedExtraIds": [
+            "hexagonal-architecture-origins"
+          ]
+        },
+        {
+          "id": "topic-hex-2",
+          "title": "Domain Hexagon: Entities & Specifications",
+          "file": "learn/02-domain-hexagon-entities-specifications.md",
+          "relatedQuizId": "quiz-hex-fundamentals",
+          "relatedExtraIds": [
+            "telco-topology-case-study"
+          ]
+        },
+        {
+          "id": "topic-hex-3",
+          "title": "Application Hexagon: Ports & Use Cases",
+          "file": "learn/03-ports-and-use-cases.md",
+          "relatedQuizId": "quiz-hex-fundamentals"
+        },
+        {
+          "id": "topic-hex-4",
+          "title": "Framework Hexagon: Driving & Driven Adapters",
+          "file": "learn/04-adapters-and-driver-driven-operations.md",
+          "relatedQuizId": "quiz-hex-fundamentals",
+          "relatedExtraIds": [
+            "telco-topology-case-study"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "modular-hexagonal-java",
+      "title": "Modular Architecture & Dependency Inversion",
+      "description": "Enforce unbreakable architectural boundaries using JPMS, compile-time module isolation, and SPI ServiceLoader wiring.",
+      "icon": "account_tree",
+      "topics": [
+        {
+          "id": "topic-hex-5",
+          "title": "Enforcing Boundaries with Java Modules (JPMS)",
+          "file": "learn/05-jpms-and-dependency-inversion.md",
+          "relatedQuizId": "quiz-modular-hex",
+          "relatedExtraIds": [
+            "jpms-module-encapsulation"
+          ]
+        },
+        {
+          "id": "topic-hex-6",
+          "title": "Decoupled Wiring with ServiceLoader & SPI",
+          "file": "learn/06-serviceloader-and-decoupled-wiring.md",
+          "relatedQuizId": "quiz-modular-hex"
+        }
+      ]
+    },
+    {
+      "id": "cloud-native-quarkus-hex",
+      "title": "Cloud-Native Hexagonal Systems with Quarkus",
+      "description": "Build supersonic hexagonal services with Quarkus Arc CDI, RESTEasy Reactive, Hibernate Reactive Panache, GraalVM, and Kubernetes.",
+      "icon": "swap_horiz",
+      "topics": [
+        {
+          "id": "topic-hex-7",
+          "title": "Quarkus CDI & The Bootstrap Module",
+          "file": "learn/07-quarkus-cdi-and-bootstrap.md",
+          "relatedQuizId": "quiz-quarkus-cloud-native"
+        },
+        {
+          "id": "topic-hex-8",
+          "title": "Reactive Input & Output with RESTEasy & Hibernate",
+          "file": "learn/08-reactive-input-and-output-adapters.md",
+          "relatedQuizId": "quiz-quarkus-cloud-native",
+          "relatedExtraIds": [
+            "quarkus-panache-reactive"
+          ]
+        },
+        {
+          "id": "topic-hex-9",
+          "title": "Containerization, GraalVM Native & Kubernetes",
+          "file": "learn/09-cloud-native-packaging-and-kubernetes.md",
+          "relatedQuizId": "quiz-quarkus-cloud-native"
+        },
+        {
+          "id": "topic-hex-10",
+          "title": "DDD Synergy, Multiple Adapters & Anti-Patterns",
+          "file": "learn/10-ddd-practices-and-architectural-evolution.md",
+          "relatedQuizId": "quiz-quarkus-cloud-native"
+        }
+      ]
+    }
+  ],
+  "extras": [
+    {
+      "id": "telco-topology-case-study",
+      "title": "Case Study: Telco Network Topology Inventory",
+      "summary": "Real-world implementation breakdown of Core/Edge routers, switches, and Specification pattern validation.",
+      "type": "USE_CASE",
+      "tags": [
+        "CaseStudy",
+        "DDD",
+        "SpecificationPattern",
+        "Java"
+      ],
+      "tier": "FREE",
+      "unlockAfterPathId": null,
+      "externalUrl": null,
+      "file": "extra/use-case-telco-topology.md"
+    },
+    {
+      "id": "jpms-module-encapsulation",
+      "title": "JPMS Strong Encapsulation vs Reflection DI",
+      "summary": "Why Java Platform Module System strong encapsulation prevents architectural erosion better than conventional Spring reflection.",
+      "type": "CURIOSITY",
+      "tags": [
+        "JPMS",
+        "JavaModules",
+        "Encapsulation"
+      ],
+      "tier": "FREE",
+      "unlockAfterPathId": null,
+      "externalUrl": null,
+      "file": "extra/jpms-vs-spring-di.md"
+    },
+    {
+      "id": "quarkus-panache-reactive",
+      "title": "Non-Blocking Mutiny Pipelines in Hexagonal Adapters",
+      "summary": "How to isolate SmallRye Mutiny reactive streams in adapters without letting asynchronous types leak into core domain entities.",
+      "type": "USE_CASE",
+      "tags": [
+        "Reactive",
+        "Mutiny",
+        "Quarkus",
+        "Panache"
+      ],
+      "tier": "CORE",
+      "unlockAfterPathId": "cloud-native-quarkus-hex",
+      "externalUrl": null,
+      "file": "extra/quarkus-panache-reactive-deep-dive.md"
+    },
+    {
+      "id": "hexagonal-architecture-origins",
+      "title": "The Evolution of Decoupled Architectures",
+      "summary": "Historical lineage and conceptual comparisons between Ports & Adapters (2005), Onion (2008), and Clean Architecture (2012).",
+      "type": "HISTORY",
+      "tags": [
+        "History",
+        "Architecture",
+        "PortsAndAdapters",
+        "CleanArchitecture"
+      ],
+      "tier": "FREE",
+      "unlockAfterPathId": null,
+      "externalUrl": null,
+      "file": "extra/hexagonal-vs-clean-onion-history.md"
+    }
+  ],
+  "quizzes": [
+    {
+      "id": "quiz-hex-fundamentals",
+      "title": "Hexagonal Architecture Fundamentals Assessment",
+      "relatedPathId": "hexagonal-fundamentals",
+      "questionCount": 4,
+      "timeLimitMinutes": 5,
+      "passPercentage": 75,
+      "file": "quiz/hex-fundamentals-quiz.md"
+    },
+    {
+      "id": "quiz-modular-hex",
+      "title": "JPMS Modularity & Decoupled Wiring Assessment",
+      "relatedPathId": "modular-hexagonal-java",
+      "questionCount": 3,
+      "timeLimitMinutes": 4,
+      "passPercentage": 66,
+      "file": "quiz/modular-hex-quiz.md"
+    },
+    {
+      "id": "quiz-quarkus-cloud-native",
+      "title": "Quarkus Cloud-Native Hexagonal Systems Assessment",
+      "relatedPathId": "cloud-native-quarkus-hex",
+      "questionCount": 4,
+      "timeLimitMinutes": 5,
+      "passPercentage": 75,
+      "file": "quiz/quarkus-cloud-native-quiz.md"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "version": 8,
+  "version": 9,
   "subjects": [
     {
       "id": "system-design",
@@ -35,6 +35,13 @@
       "description": "Decision-only evaluation, calibrated confidence cascades, LLM-as-a-Judge cost reduction, and CMU empirical benchmark findings.",
       "version": 3,
       "path": "content/jev-as-a-judge/subject.json"
+    },
+    {
+      "id": "hexagonal-architecture-java",
+      "title": "Designing Hexagonal Architecture with Java",
+      "description": "Decouple domain business logic from technology with ports and adapters, domain-driven design, JPMS modularity, and cloud-native Quarkus services.",
+      "version": 1,
+      "path": "content/hexagonal-architecture-java/subject.json"
     }
   ]
 }
