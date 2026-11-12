@@ -1,5 +1,5 @@
 {
-  "version": 9,
+  "version": 10,
   "subjects": [
     {
       "id": "system-design",
@@ -42,6 +42,13 @@
       "description": "Decouple domain business logic from technology with ports and adapters, domain-driven design, JPMS modularity, and cloud-native Quarkus services.",
       "version": 1,
       "path": "content/hexagonal-architecture-java/subject.json"
+    },
+    {
+      "id": "postgresql",
+      "title": "Mastering PostgreSQL: Architecture & Practice",
+      "description": "Object-relational architecture, MVCC concurrency, advanced indexing, hybrid JSONB models, PostGIS geospatial, and cluster scaling.",
+      "version": 1,
+      "path": "content/postgresql/subject.json"
     }
   ]
 }

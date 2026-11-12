@@ -1,0 +1,169 @@
+{
+  "id": "postgresql",
+  "title": "Mastering PostgreSQL: Architecture & Practice",
+  "version": 1,
+  "assets": [],
+  "path": [
+    {
+      "id": "path-pg-1",
+      "title": "PostgreSQL Architecture & Core Engine",
+      "description": "Object-relational foundations, memory & process architecture, MVCC concurrency, and WAL durability.",
+      "icon": "hub",
+      "topics": [
+        {
+          "id": "topic-pg-1-1",
+          "title": "What is PostgreSQL? The Object-Relational Engine",
+          "file": "learn/01-what-is-postgresql.md",
+          "relatedExtraIds": [
+            "extra-pg-2"
+          ]
+        },
+        {
+          "id": "topic-pg-1-2",
+          "title": "MVCC, Concurrency & Transaction Isolation",
+          "file": "learn/02-mvcc-and-transaction-isolation.md",
+          "relatedQuizId": "quiz-pg-1",
+          "relatedExtraIds": [
+            "extra-pg-4"
+          ]
+        },
+        {
+          "id": "topic-pg-1-3",
+          "title": "Advanced SQL Features & Procedural Extensibility",
+          "file": "learn/03-advanced-sql-and-extensibility.md"
+        }
+      ]
+    },
+    {
+      "id": "path-pg-2",
+      "title": "Performance, Hybrid Workloads & Scaling",
+      "description": "Cost-based query planning, indexing internals, JSONB/PostGIS data models, alternatives comparison, and cluster scaling.",
+      "icon": "account_tree",
+      "topics": [
+        {
+          "id": "topic-pg-2-1",
+          "title": "Indexing Strategies & Query Planner Internals",
+          "file": "learn/04-indexing-and-query-optimization.md"
+        },
+        {
+          "id": "topic-pg-2-2",
+          "title": "Hybrid Data Models: JSONB & PostGIS",
+          "file": "learn/05-hybrid-data-and-extensions.md",
+          "relatedQuizId": "quiz-pg-2",
+          "relatedExtraIds": [
+            "extra-pg-3"
+          ]
+        },
+        {
+          "id": "topic-pg-2-3",
+          "title": "PostgreSQL vs Alternatives: Choosing the Right Database",
+          "file": "learn/06-postgresql-vs-alternatives.md",
+          "relatedExtraIds": [
+            "extra-pg-1"
+          ]
+        },
+        {
+          "id": "topic-pg-2-4",
+          "title": "Scaling, Replication & Production Deployment",
+          "file": "learn/07-scaling-and-deployment.md",
+          "relatedQuizId": "quiz-pg-2"
+        }
+      ]
+    }
+  ],
+  "extras": [
+    {
+      "id": "extra-pg-1",
+      "title": "The Swiss Army Knife Architecture: Postgres as Redis, Mongo, and Queue",
+      "summary": "Consolidating caches, task queues, and document collections onto PostgreSQL to eliminate distributed system complexity.",
+      "type": "USE_CASE",
+      "tags": [
+        "Architecture",
+        "SkipLocked",
+        "JSONB"
+      ],
+      "tier": "FREE",
+      "unlockAfterPathId": null,
+      "externalUrl": null,
+      "file": "extra/swiss-army-knife-architecture.md"
+    },
+    {
+      "id": "extra-pg-2",
+      "title": "The Origins of Postgres: Stonebraker's Vision",
+      "summary": "How Turing Award laureate Michael Stonebraker's Berkeley project revolutionized relational databases into modern PostgreSQL.",
+      "type": "HISTORY",
+      "tags": [
+        "History",
+        "Stonebraker",
+        "Berkeley"
+      ],
+      "tier": "FREE",
+      "unlockAfterPathId": null,
+      "externalUrl": null,
+      "file": "extra/postgres-history.md"
+    },
+    {
+      "id": "extra-pg-3",
+      "title": "Real-World Architecture: Fleet Logistics with PostGIS",
+      "summary": "Sub-millisecond driver geofencing and KNN spatial dispatch within a single transactional database.",
+      "type": "USE_CASE",
+      "tags": [
+        "PostGIS",
+        "Geospatial",
+        "GiST"
+      ],
+      "tier": "CORE",
+      "unlockAfterPathId": "path-pg-2",
+      "externalUrl": null,
+      "file": "extra/postgis-logistics-case-study.md"
+    },
+    {
+      "id": "extra-pg-4",
+      "title": "Under the Hood: Write-Ahead Log (WAL) & Crash Recovery",
+      "summary": "The internal LSN mechanics and sequential append architecture that guarantee zero data loss during server crashes.",
+      "type": "CURIOSITY",
+      "tags": [
+        "WAL",
+        "Durability",
+        "Recovery"
+      ],
+      "tier": "FREE",
+      "unlockAfterPathId": null,
+      "externalUrl": null,
+      "file": "extra/wal-internals-and-recovery.md"
+    },
+    {
+      "id": "extra-pg-5",
+      "title": "Official PostgreSQL Documentation",
+      "summary": "The canonical PostgreSQL Global Development Group reference manual covering all engine internals and SQL syntax.",
+      "type": "EXTERNAL_LINK",
+      "tags": [
+        "Reference",
+        "Manual",
+        "Community"
+      ],
+      "tier": "FREE",
+      "unlockAfterPathId": null,
+      "externalUrl": "https://www.postgresql.org/docs/current/",
+      "file": null
+    }
+  ],
+  "quizzes": [
+    {
+      "id": "quiz-pg-1",
+      "title": "PostgreSQL Architecture & MVCC Internals",
+      "questionCount": 5,
+      "timeLimitMinutes": 5,
+      "passPercentage": 75,
+      "file": "quiz/postgresql-architecture-quiz.md"
+    },
+    {
+      "id": "quiz-pg-2",
+      "title": "PostgreSQL Advanced Features, JSONB & Scaling",
+      "questionCount": 5,
+      "timeLimitMinutes": 5,
+      "passPercentage": 75,
+      "file": "quiz/postgresql-advanced-quiz.md"
+    }
+  ]
+}
