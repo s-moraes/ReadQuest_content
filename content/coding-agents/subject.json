@@ -1,0 +1,170 @@
+{
+  "id": "coding-agents",
+  "title": "Coding Agents in Practice: Google Antigravity & Claude Code",
+  "version": 1,
+  "assets": [],
+  "path": [
+    {
+      "id": "path-ca-1",
+      "title": "Agent Architecture & Operator Foundations",
+      "description": "How coding agents work under the hood, managing context windows, configuring Google Antigravity and Claude Code, and controlling blast radius.",
+      "icon": "hub",
+      "topics": [
+        {
+          "id": "topic-ca-1-1",
+          "title": "The Coding Agent Loop: From Autocomplete to Autonomous Operator",
+          "file": "learn/01-the-coding-agent-loop.md",
+          "relatedExtraIds": [
+            "extra-ca-1"
+          ]
+        },
+        {
+          "id": "topic-ca-1-2",
+          "title": "Context Engineering & Memory: CLAUDE.md, GEMINI.md & AGENTS.md",
+          "file": "learn/02-context-engineering-and-memory.md",
+          "relatedQuizId": "quiz-ca-1"
+        },
+        {
+          "id": "topic-ca-1-3",
+          "title": "Permissions, Sandboxing & Blast-Radius Control",
+          "file": "learn/03-permissions-and-sandboxing.md",
+          "relatedQuizId": "quiz-ca-1",
+          "relatedExtraIds": [
+            "extra-ca-2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-ca-2",
+      "title": "Extensibility, Automation & Multi-Agent Orchestration",
+      "description": "Building reusable skills, deterministic lifecycle hooks, MCP tool integrations, isolated subagents, and parallel agent swarms.",
+      "icon": "account_tree",
+      "topics": [
+        {
+          "id": "topic-ca-2-1",
+          "title": "Skills, Slash Commands & Progressive Disclosure",
+          "file": "learn/04-skills-and-slash-commands.md"
+        },
+        {
+          "id": "topic-ca-2-2",
+          "title": "Deterministic Guardrails with Lifecycle Hooks",
+          "file": "learn/05-lifecycle-hooks-and-guardrails.md",
+          "relatedQuizId": "quiz-ca-2",
+          "relatedExtraIds": [
+            "extra-ca-3"
+          ]
+        },
+        {
+          "id": "topic-ca-2-3",
+          "title": "Model Context Protocol (MCP): Connecting External Systems",
+          "file": "learn/06-mcp-and-external-tools.md"
+        },
+        {
+          "id": "topic-ca-2-4",
+          "title": "Subagents, Swarms & Parallel Worktree Execution",
+          "file": "learn/07-subagents-swarms-and-worktrees.md",
+          "relatedQuizId": "quiz-ca-2",
+          "relatedExtraIds": [
+            "extra-ca-4"
+          ]
+        }
+      ]
+    }
+  ],
+  "extras": [
+    {
+      "id": "extra-ca-1",
+      "title": "Side-by-Side Operator Cheat Sheet: Antigravity vs. Claude Code",
+      "summary": "Quick-reference mapping of configuration files, slash commands, permission modes, and customization paths across both agents.",
+      "type": "USE_CASE",
+      "tags": [
+        "CheatSheet",
+        "Antigravity",
+        "ClaudeCode"
+      ],
+      "tier": "FREE",
+      "unlockAfterPathId": null,
+      "externalUrl": null,
+      "file": "extra/antigravity-vs-claude-code-cheatsheet.md"
+    },
+    {
+      "id": "extra-ca-2",
+      "title": "Safe Feature Delivery: Plan, Worktrees & Verification",
+      "summary": "End-to-end operator workflow for shipping a real feature from ticket scoping and /plan mode to isolated worktree diff review.",
+      "type": "USE_CASE",
+      "tags": [
+        "Workflow",
+        "Worktrees",
+        "Verification"
+      ],
+      "tier": "FREE",
+      "unlockAfterPathId": null,
+      "externalUrl": null,
+      "file": "extra/safe-feature-delivery-workflow.md"
+    },
+    {
+      "id": "extra-ca-3",
+      "title": "Why Agents Hallucinate & How Verification Loops Fix It",
+      "summary": "Understanding sycophancy, stale mental models, and test-cheating—and how grounded verification loops eliminate them.",
+      "type": "CURIOSITY",
+      "tags": [
+        "Reliability",
+        "Testing",
+        "Guardrails"
+      ],
+      "tier": "CORE",
+      "unlockAfterPathId": "path-ca-1",
+      "externalUrl": null,
+      "file": "extra/verification-loops-and-failure-modes.md"
+    },
+    {
+      "id": "extra-ca-4",
+      "title": "Headless & CI/CD Agent Automation",
+      "summary": "Running Claude Code (-p) and Google Antigravity (CLI, Python SDK, and Scheduled Tasks) in non-interactive pipelines.",
+      "type": "USE_CASE",
+      "tags": [
+        "CICD",
+        "Automation",
+        "SDK"
+      ],
+      "tier": "CORE",
+      "unlockAfterPathId": "path-ca-2",
+      "externalUrl": null,
+      "file": "extra/headless-cicd-automation.md"
+    },
+    {
+      "id": "extra-ca-5",
+      "title": "Official Google Antigravity Documentation",
+      "summary": "Authoritative reference for Antigravity CLI (agy), Antigravity 2.0, skills, hooks, MCP, permissions, and the Python SDK.",
+      "type": "EXTERNAL_LINK",
+      "tags": [
+        "Docs",
+        "Antigravity",
+        "Reference"
+      ],
+      "tier": "FREE",
+      "unlockAfterPathId": null,
+      "externalUrl": "https://antigravity.google/docs",
+      "file": null
+    }
+  ],
+  "quizzes": [
+    {
+      "id": "quiz-ca-1",
+      "title": "Agent Foundations, Context & Sandboxing",
+      "questionCount": 5,
+      "timeLimitMinutes": 5,
+      "passPercentage": 75,
+      "file": "quiz/agent-foundations-quiz.md"
+    },
+    {
+      "id": "quiz-ca-2",
+      "title": "Skills, Hooks, MCP & Multi-Agent Orchestration",
+      "questionCount": 5,
+      "timeLimitMinutes": 5,
+      "passPercentage": 75,
+      "file": "quiz/extensibility-and-orchestration-quiz.md"
+    }
+  ]
+}

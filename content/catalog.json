@@ -1,5 +1,5 @@
 {
-  "version": 10,
+  "version": 11,
   "subjects": [
     {
       "id": "system-design",
@@ -49,6 +49,13 @@
       "description": "Object-relational architecture, MVCC concurrency, advanced indexing, hybrid JSONB models, PostGIS geospatial, and cluster scaling.",
       "version": 1,
       "path": "content/postgresql/subject.json"
+    },
+    {
+      "id": "coding-agents",
+      "title": "Coding Agents in Practice: Google Antigravity & Claude Code",
+      "description": "Operator's playbook for AI coding agents: context engineering, rules, skills, hooks, MCP servers, subagents, sandboxing, and multi-agent workflows.",
+      "version": 1,
+      "path": "content/coding-agents/subject.json"
     }
   ]
 }
