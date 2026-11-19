@@ -53,6 +53,54 @@ Experienced developers often struggle with coding agents at first because they t
 
 ---
 
+## Repository-Level Engineering Agents
+
+Both **Google Antigravity** and **Claude Code** are **repository-level engineering agents**, not file-level assistants. That distinction changes how they reason about software:
+
+- **Cross-File & Dependency Awareness:** Instead of seeing only the active editor tab, they traverse your entire repository—reading build manifests (`pom.xml`, `package.json`, `Cargo.toml`), tracing call sites across modules with `grep`/`ripgrep`, inspecting Git history, and checking test suites.
+- **Environment & Tool Coupling:** They operate directly against your local toolchain (compilers, linters, Docker, database migrations, test runners), treating exit codes and stack traces as first-class observations.
+- **Stateful Multi-Turn Execution:** A single user request can trigger 10 to 50+ autonomous tool calls (search -> read -> plan -> edit -> test -> fix) before the agent hands control back to you.
+
+---
+
+## The Planning & Execution Loops
+
+Effective operators separate **planning** from **execution**. Letting an agent jump straight from a vague prompt into editing 12 files is the fastest way to burn tokens and introduce architectural drift. Both platforms enforce a two-phase loop:
+
+```text
++-------------------------------------------------------------------+
+| Phase 1: Read-Only Discovery & Planning Loop                      |
+|                                                                   |
+|  Search Repo (glob/grep) -> Read Key Files -> Draft Plan          |
+|         ^                                         |               |
+|         +--- Ask Clarifying Questions (HITL) <----+               |
+|                                                   |               |
+|                                          Human Approves Plan      |
++---------------------------------------------------|---------------+
+                                                    v
++-------------------------------------------------------------------+
+| Phase 2: Incremental Execution & Verification Loop                |
+|                                                                   |
+|  Edit Files -> Run Build / Tests -> Read Errors / Exit Code       |
+|       ^                                           |               |
+|       +--------- Patch & Retry (if failed) <------+               |
+|                                                   |               |
+|                                       Tests Pass + Diff Review    |
++-------------------------------------------------------------------+
+```
+
+### How Claude Code Runs the Loop
+- **Exploration Pass:** Claude Code starts by invoking read-only tools (`Glob`, `Grep`, `Read`) to map symbols and conventions without mutating disk state.
+- **Explicit `plan` Mode (`/plan` or `Shift+Tab`):** In `plan` mode, mutating tools (`Edit`, `Write`, state-changing `Bash`) are blocked by the harness. Claude writes a structured implementation plan—listing target files, interfaces, and test strategy—and pauses until you approve and transition into execution.
+- **Execution & Self-Correction:** Once approved, Claude applies edits, runs targeted tests via `Bash`, reads failures, and loops until tests pass or `--max-turns` / human interruption stops it.
+
+### How Google Antigravity Runs the Loop
+- **Multi-Surface Planning:** In `agy` CLI or Antigravity 2.0, `/plan` structures a step-by-step execution blueprint, while `/grill-me` runs an interactive alignment interview to resolve ambiguous design trade-offs before any file is touched.
+- **Artifact-Backed Plans:** Antigravity can persist plans, task lists, and architecture summaries as **Artifacts** in the Auxiliary Pane, allowing the operator to review and give feedback (`Proceed` or revise) before execution begins.
+- **Delegated Loops:** When discovery is heavy, Antigravity can offload read-only exploration to a `research` subagent (isolated, read-only, no network) so raw search output never pollutes the main planning context.
+
+---
+
 ## Google Antigravity vs. Claude Code: Two Philosophies
 
 Both **Google Antigravity** and **Claude Code** are top-tier agentic coding platforms, but they expose different surfaces and strengths for the operator.

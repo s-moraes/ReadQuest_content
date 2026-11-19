@@ -63,6 +63,29 @@ Notice how `deny` rules protect secrets (`.env*`, `~/.ssh/**`) from even enterin
 
 ---
 
+## Human-in-the-Loop (HITL) Boundaries
+
+A permission model is only useful if it defines **where the agent runs autonomously and where a human must intervene**. Good HITL design avoids two extremes: *prompt fatigue* (clicking "Approve" 40 times for harmless `git status` or `pytest` runs) and *blind autonomy* (letting an agent push to `main` or drop a database).
+
+### The Four HITL Checkpoints
+
+| Boundary | What Happens Here | Antigravity Mechanism | Claude Code Mechanism |
+| :--- | :--- | :--- | :--- |
+| **1. Scope & Intent Gate** | Agent clarifies ambiguous requirements before editing | `/plan`, `/grill-me`, `ask_question`, Plan Artifacts | `plan` mode (`/plan`), interactive Q&A |
+| **2. Tool & Action Gate** | Harness pauses before risky commands or external calls | `strict` / `request-review`, `internet_access: ask`, `hooks.json` | Default mode, `permissions.ask`, `PreToolUse` hooks |
+| **3. Blast-Radius Boundary** | Agent runs freely inside a safe sandboxed box | `proceed-in-sandbox` + Terminal Sandbox + `workspace: "share"` | `acceptEdits` + `permissions.allow` + `--worktree` |
+| **4. Final Merge / Deploy Gate** | Human audits diffs, tests, and commits before shipping | Files Changed pane + `git diff` review | `/review`, `Esc Esc` / `/rewind` checkpoints, `git diff` |
+
+### Calibrating Your Autonomy Dial
+
+As you gain confidence in a repository's test suite and hooks, gradually shift low-risk actions to **auto-approve** while keeping high-impact actions **human-gated**:
+
+- **Safe to Auto-Approve:** Read-only file search (`Read`, `Grep`, `Glob`), running unit tests, formatting code, and editing files inside an isolated Git worktree.
+- **Keep Human-Gated:** Installing new dependencies (`npm install`, `pip install`), modifying CI/CD or infrastructure-as-code (`Dockerfile`, Terraform), database migrations against shared environments, `git push`, and outbound network/API mutations.
+- **Always Deny:** Reading local secrets (`.env*`, `~/.ssh`, `~/.aws`), `git push --force`, and destructive recursive deletes outside temp/worktree paths.
+
+---
+
 ## Git as Your Operational Safety Net
 
 Even with perfect permissions, an agent can take a wrong turn mid-refactor and touch 14 files before you realize it. Follow these three Git habits:
