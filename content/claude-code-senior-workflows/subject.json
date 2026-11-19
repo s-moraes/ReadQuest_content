@@ -1,7 +1,7 @@
 {
   "id": "claude-code-senior-workflows",
   "title": "Claude Code for Senior Engineers: Linux, Java & IDE Shift",
-  "version": 1,
+  "version": 2,
   "assets": [],
   "path": [
     {
@@ -50,6 +50,31 @@
           "title": "The IDE Shift: Terminal Orchestration vs. IntelliJ & VS Code",
           "file": "learn/05-the-ide-shift-and-senior-leverage.md",
           "relatedQuizId": "quiz-cc-2"
+        },
+        {
+          "id": "topic-cc-2-4",
+          "title": "Working with Android Studio & Apache NetBeans",
+          "file": "learn/06-android-studio-and-netbeans-workflows.md",
+          "relatedQuizId": "quiz-cc-3"
+        }
+      ]
+    },
+    {
+      "id": "path-cc-integrations",
+      "title": "Enterprise Integrations: Atlassian & Beyond",
+      "description": "Connecting Claude Code to Jira, Bitbucket, Confluence, Sentry, PostgreSQL, and team workflows with least-privilege guardrails.",
+      "icon": "hub",
+      "topics": [
+        {
+          "id": "topic-cc-3-1",
+          "title": "Jira, Bitbucket & Confluence with Claude Code",
+          "file": "learn/07-jira-bitbucket-confluence-integrations.md"
+        },
+        {
+          "id": "topic-cc-3-2",
+          "title": "Sentry, Databases, Slack & Custom Enterprise Integrations",
+          "file": "learn/08-observability-db-and-team-integrations.md",
+          "relatedQuizId": "quiz-cc-3"
         }
       ]
     }
@@ -117,6 +142,14 @@
       "timeLimitMinutes": 5,
       "passPercentage": 75,
       "file": "quiz/java-and-ide-strategy-quiz.md"
+    },
+    {
+      "id": "quiz-cc-3",
+      "title": "Android Studio, NetBeans & Enterprise Integrations",
+      "questionCount": 5,
+      "timeLimitMinutes": 5,
+      "passPercentage": 75,
+      "file": "quiz/ide-and-integrations-quiz.md"
     }
   ]
 }
