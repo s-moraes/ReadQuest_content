@@ -1,7 +1,7 @@
 {
   "id": "coding-agents",
   "title": "Coding Agents in Practice: Google Antigravity & Claude Code",
-  "version": 2,
+  "version": 3,
   "assets": [],
   "path": [
     {
@@ -68,6 +68,33 @@
           "relatedExtraIds": [
             "extra-ca-4"
           ]
+        }
+      ]
+    },
+    {
+      "id": "path-ca-3",
+      "title": "Senior Engineer Workflows: Linux, Java & the IDE Shift",
+      "description": "Operating Claude Code as a senior engineer: Unix pipelines and tmux worktrees, Maven/Gradle Java test loops, and balancing terminal agents with IntelliJ IDEA and VS Code.",
+      "icon": "terminal",
+      "topics": [
+        {
+          "id": "topic-ca-3-1",
+          "title": "Claude Code on Linux: Shell Composition, tmux & Worktree Mastery",
+          "file": "learn/08-claude-code-linux-workflows.md"
+        },
+        {
+          "id": "topic-ca-3-2",
+          "title": "Java Engineering with Claude Code: Maven/Gradle, Spring & Test Loops",
+          "file": "learn/09-java-workflows-with-claude-code.md",
+          "relatedExtraIds": [
+            "extra-ca-6"
+          ]
+        },
+        {
+          "id": "topic-ca-3-3",
+          "title": "The IDE Shift: Terminal-First Orchestration vs. IntelliJ & VS Code",
+          "file": "learn/10-the-ide-shift-and-senior-leverage.md",
+          "relatedQuizId": "quiz-ca-3"
         }
       ]
     }
@@ -147,6 +174,21 @@
       "unlockAfterPathId": null,
       "externalUrl": "https://antigravity.google/docs",
       "file": null
+    },
+    {
+      "id": "extra-ca-6",
+      "title": "Senior Java + Linux CLAUDE.md Blueprint",
+      "summary": "Production-ready CLAUDE.md and .claude/settings.json with quiet Maven test commands, security deny rules, and a Spotless PostToolUse hook.",
+      "type": "USE_CASE",
+      "tags": [
+        "Java",
+        "Linux",
+        "Blueprint"
+      ],
+      "tier": "FREE",
+      "unlockAfterPathId": null,
+      "externalUrl": null,
+      "file": "extra/senior-java-linux-claude-blueprint.md"
     }
   ],
   "quizzes": [
@@ -165,6 +207,14 @@
       "timeLimitMinutes": 5,
       "passPercentage": 75,
       "file": "quiz/extensibility-and-orchestration-quiz.md"
+    },
+    {
+      "id": "quiz-ca-3",
+      "title": "Senior Workflows: Linux, Java & IDE Strategy",
+      "questionCount": 5,
+      "timeLimitMinutes": 5,
+      "passPercentage": 75,
+      "file": "quiz/senior-workflows-quiz.md"
     }
   ]
 }

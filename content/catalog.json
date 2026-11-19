@@ -1,5 +1,5 @@
 {
-  "version": 12,
+  "version": 13,
   "subjects": [
     {
       "id": "system-design",
@@ -54,7 +54,7 @@
       "id": "coding-agents",
       "title": "Coding Agents in Practice: Google Antigravity & Claude Code",
       "description": "Operator's playbook for AI coding agents: context engineering, rules, skills, hooks, MCP servers, subagents, sandboxing, and multi-agent workflows.",
-      "version": 2,
+      "version": 3,
       "path": "content/coding-agents/subject.json"
     }
   ]
