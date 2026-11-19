@@ -1,5 +1,5 @@
 {
-  "version": 13,
+  "version": 14,
   "subjects": [
     {
       "id": "system-design",
@@ -54,8 +54,15 @@
       "id": "coding-agents",
       "title": "Coding Agents in Practice: Google Antigravity & Claude Code",
       "description": "Operator's playbook for AI coding agents: context engineering, rules, skills, hooks, MCP servers, subagents, sandboxing, and multi-agent workflows.",
-      "version": 3,
+      "version": 4,
       "path": "content/coding-agents/subject.json"
+    },
+    {
+      "id": "claude-code-senior-workflows",
+      "title": "Claude Code for Senior Engineers: Linux, Java & IDE Shift",
+      "description": "Senior developer workflows with Claude Code: Unix pipelines, tmux worktrees, Maven/Gradle Java test loops, and balancing CLI agents with IntelliJ & VS Code.",
+      "version": 1,
+      "path": "content/claude-code-senior-workflows/subject.json"
     }
   ]
 }

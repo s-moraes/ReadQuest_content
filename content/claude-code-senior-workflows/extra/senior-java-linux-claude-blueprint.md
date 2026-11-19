@@ -1,4 +1,4 @@
-# Senior Java + Linux `CLAUDE.md` Blueprint
+# Senior Java + Linux `CLAUDE.md` & Hooks Blueprint
 
 Below is a production-ready starter `CLAUDE.md` and `.claude/settings.json` tailored for a senior Java + Linux engineering team. Drop these at your repository root and customize the module names.
 

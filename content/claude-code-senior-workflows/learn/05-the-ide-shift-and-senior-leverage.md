@@ -1,6 +1,6 @@
-# The IDE Shift: Terminal-First Orchestration vs. IntelliJ & VS Code
+# The IDE Shift: Terminal Orchestration vs. IntelliJ & VS Code
 
-The biggest workflow change for a senior developer adopting **Claude Code** (or **Google Antigravity**) is not how fast you type—it is **where your attention lives**.
+The biggest workflow change for a senior developer adopting **Claude Code** is not how fast you type—it is **where your attention lives**.
 
 For two decades, the IDE (IntelliJ IDEA, Eclipse, VS Code) was the center of gravity: you navigated files, wrote implementations line-by-line, and ran tests from an IDE panel. With repository-level coding agents, **the terminal becomes the control plane**, and the IDE shifts into a **high-precision inspection and debugging workbench**.
 
@@ -19,7 +19,7 @@ Agent-Orchestrated Senior Loop:
 ```
 
 Instead of spending 80% of your energy on syntax and boilerplate, you spend it on:
-1. **Problem Framing & Invariants:** Defining acceptance criteria, edge cases, and architectural constraints.
+1. **Problem Framing & Invariants:** Defining acceptance criteria, edge cases, and architectural boundaries.
 2. **Context & Guardrail Design:** Maintaining `CLAUDE.md`, skills, and hooks so the team's agent gets faster every week.
 3. **Critical Code Review:** Auditing `git diff` and test coverage with the skepticism of a staff reviewer.
 

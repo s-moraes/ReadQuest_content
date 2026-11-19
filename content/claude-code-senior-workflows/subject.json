@@ -1,0 +1,122 @@
+{
+  "id": "claude-code-senior-workflows",
+  "title": "Claude Code for Senior Engineers: Linux, Java & IDE Shift",
+  "version": 1,
+  "assets": [],
+  "path": [
+    {
+      "id": "path-cc-linux",
+      "title": "Linux Terminal Mastery & Isolation",
+      "description": "Operating Claude Code as a Unix-native CLI citizen: stdin/stdout pipelines, tmux parallel sessions, Git worktrees, and rootless Linux containers.",
+      "icon": "terminal",
+      "topics": [
+        {
+          "id": "topic-cc-1-1",
+          "title": "Claude Code as a Unix Citizen: Pipes, Logs & Headless CLI",
+          "file": "learn/01-unix-pipelines-and-headless-cli.md",
+          "relatedExtraIds": [
+            "extra-cc-2"
+          ]
+        },
+        {
+          "id": "topic-cc-1-2",
+          "title": "Parallel Workspaces: tmux, Git Worktrees & Linux Containers",
+          "file": "learn/02-tmux-worktrees-and-containers.md",
+          "relatedQuizId": "quiz-cc-1"
+        }
+      ]
+    },
+    {
+      "id": "path-cc-java",
+      "title": "Java Engineering & The IDE Shift",
+      "description": "Fast, quiet Maven/Gradle feedback loops, Spring Boot & Testcontainers reliability, and balancing terminal-first agents with IntelliJ IDEA and VS Code.",
+      "icon": "code",
+      "topics": [
+        {
+          "id": "topic-cc-2-1",
+          "title": "Taming Maven & Gradle: Fast, Quiet Java Feedback Loops",
+          "file": "learn/03-java-maven-gradle-loops.md",
+          "relatedExtraIds": [
+            "extra-cc-1"
+          ]
+        },
+        {
+          "id": "topic-cc-2-2",
+          "title": "Spring Boot, Quarkus & Testcontainers with Claude Code",
+          "file": "learn/04-spring-quarkus-and-testing.md"
+        },
+        {
+          "id": "topic-cc-2-3",
+          "title": "The IDE Shift: Terminal Orchestration vs. IntelliJ & VS Code",
+          "file": "learn/05-the-ide-shift-and-senior-leverage.md",
+          "relatedQuizId": "quiz-cc-2"
+        }
+      ]
+    }
+  ],
+  "extras": [
+    {
+      "id": "extra-cc-1",
+      "title": "Senior Java + Linux CLAUDE.md & Hooks Blueprint",
+      "summary": "Production-ready CLAUDE.md and .claude/settings.json with quiet Maven test commands, Linux deny rules, and a Spotless PostToolUse hook.",
+      "type": "USE_CASE",
+      "tags": [
+        "Java",
+        "Linux",
+        "Blueprint"
+      ],
+      "tier": "FREE",
+      "unlockAfterPathId": null,
+      "externalUrl": null,
+      "file": "extra/senior-java-linux-claude-blueprint.md"
+    },
+    {
+      "id": "extra-cc-2",
+      "title": "Daily Operator Routine: 5-Minute Triage to Verified PR",
+      "summary": "How a senior engineer structures their morning log triage, parallel worktree delegation, and afternoon diff audit with Claude Code.",
+      "type": "USE_CASE",
+      "tags": [
+        "Workflow",
+        "Triage",
+        "Senior"
+      ],
+      "tier": "FREE",
+      "unlockAfterPathId": null,
+      "externalUrl": null,
+      "file": "extra/daily-senior-operator-routine.md"
+    },
+    {
+      "id": "extra-cc-3",
+      "title": "Official Claude Code Documentation",
+      "summary": "Anthropic's official reference for Claude Code CLI flags, hooks, subagents, MCP servers, and IDE integrations.",
+      "type": "EXTERNAL_LINK",
+      "tags": [
+        "Docs",
+        "ClaudeCode",
+        "Reference"
+      ],
+      "tier": "FREE",
+      "unlockAfterPathId": null,
+      "externalUrl": "https://docs.anthropic.com/en/docs/claude-code/overview",
+      "file": null
+    }
+  ],
+  "quizzes": [
+    {
+      "id": "quiz-cc-1",
+      "title": "Linux Pipelines, Worktrees & Container Isolation",
+      "questionCount": 5,
+      "timeLimitMinutes": 5,
+      "passPercentage": 75,
+      "file": "quiz/linux-and-isolation-quiz.md"
+    },
+    {
+      "id": "quiz-cc-2",
+      "title": "Java Build Loops & IDE Strategy",
+      "questionCount": 5,
+      "timeLimitMinutes": 5,
+      "passPercentage": 75,
+      "file": "quiz/java-and-ide-strategy-quiz.md"
+    }
+  ]
+}
