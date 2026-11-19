@@ -1,7 +1,7 @@
 {
   "id": "claude-code-senior-workflows",
   "title": "Claude Code for Senior Engineers: Linux, Java & IDE Shift",
-  "version": 2,
+  "version": 3,
   "assets": [],
   "path": [
     {
@@ -77,6 +77,35 @@
           "relatedQuizId": "quiz-cc-3"
         }
       ]
+    },
+    {
+      "id": "path-cc-architecture",
+      "title": "Legacy Systems, DB Tuning, Security & Cost",
+      "description": "Strangler Fig legacy migrations, N+1 and PostgreSQL query tuning, pre-PR security subagents, and model-routing economics.",
+      "icon": "security",
+      "topics": [
+        {
+          "id": "topic-cc-4-1",
+          "title": "Legacy Codebase Archaeology & Strangler Fig Migrations",
+          "file": "learn/09-legacy-codebase-archaeology.md"
+        },
+        {
+          "id": "topic-cc-4-2",
+          "title": "Database Performance Tuning: N+1 Queries, EXPLAIN & Flyway",
+          "file": "learn/10-database-performance-and-flyway.md"
+        },
+        {
+          "id": "topic-cc-4-3",
+          "title": "Security Auditing & Pre-PR Subagent Reviews",
+          "file": "learn/11-security-auditing-and-pr-reviews.md"
+        },
+        {
+          "id": "topic-cc-4-4",
+          "title": "Model Routing, Token Economics & Cost Control",
+          "file": "learn/12-model-routing-and-cost-control.md",
+          "relatedQuizId": "quiz-cc-4"
+        }
+      ]
     }
   ],
   "extras": [
@@ -150,6 +179,14 @@
       "timeLimitMinutes": 5,
       "passPercentage": 75,
       "file": "quiz/ide-and-integrations-quiz.md"
+    },
+    {
+      "id": "quiz-cc-4",
+      "title": "Legacy, Database Tuning, Security & Cost",
+      "questionCount": 5,
+      "timeLimitMinutes": 5,
+      "passPercentage": 75,
+      "file": "quiz/architecture-and-economics-quiz.md"
     }
   ]
 }

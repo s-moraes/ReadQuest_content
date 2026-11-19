@@ -1,7 +1,7 @@
 {
   "id": "coding-agents",
   "title": "Coding Agents in Practice: Google Antigravity & Claude Code",
-  "version": 4,
+  "version": 5,
   "assets": [],
   "path": [
     {
@@ -68,6 +68,16 @@
           "relatedExtraIds": [
             "extra-ca-4"
           ]
+        },
+        {
+          "id": "topic-ca-2-5",
+          "title": "Testing & Evaluating Custom Rules, Skills & Hooks",
+          "file": "learn/08-testing-and-evals-for-agent-configs.md"
+        },
+        {
+          "id": "topic-ca-2-6",
+          "title": "Enterprise Privacy, Proxies & Hybrid Model Gateways",
+          "file": "learn/09-enterprise-privacy-and-hybrid-models.md"
         }
       ]
     }
