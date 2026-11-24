@@ -1,7 +1,7 @@
 {
   "id": "coding-agents",
   "title": "Coding Agents in Practice: Google Antigravity & Claude Code",
-  "version": 5,
+  "version": 6,
   "assets": [],
   "path": [
     {
@@ -78,6 +78,101 @@
           "id": "topic-ca-2-6",
           "title": "Enterprise Privacy, Proxies & Hybrid Model Gateways",
           "file": "learn/09-enterprise-privacy-and-hybrid-models.md"
+        }
+      ]
+    },
+    {
+      "id": "path-ca-3",
+      "title": "Context Engineering: Budgets, Caching & Handoffs",
+      "description": "Token budgeting, prompt caching stability, ignore rules, subagent context offloading, and structured session handoffs.",
+      "icon": "memory",
+      "topics": [
+        {
+          "id": "topic-ca-3-1",
+          "title": "Token Budgeting, Prompt Caching & Ignore Rules",
+          "file": "learn/10-context-window-budget-and-caching.md",
+          "relatedQuizId": "quiz-ca-3",
+          "relatedExtraIds": [
+            "extra-ca-6"
+          ]
+        },
+        {
+          "id": "topic-ca-3-2",
+          "title": "Preventing Context Rot: Subagents, Compaction & Handoffs",
+          "file": "learn/11-context-rot-subagents-and-handoffs.md",
+          "relatedQuizId": "quiz-ca-3"
+        }
+      ]
+    },
+    {
+      "id": "path-ca-4",
+      "title": "Sandboxing, Secret Isolation & Blast-Radius Tiers",
+      "description": "OS-level filesystem jails, network egress filtering, closing .env Bash bypasses, and ephemeral devcontainers.",
+      "icon": "security",
+      "topics": [
+        {
+          "id": "topic-ca-4-1",
+          "title": "OS-Level Sandboxes, Filesystem Jails & Network Egress",
+          "file": "learn/12-os-sandboxes-and-network-egress.md",
+          "relatedQuizId": "quiz-ca-3",
+          "relatedExtraIds": [
+            "extra-ca-6"
+          ]
+        },
+        {
+          "id": "topic-ca-4-2",
+          "title": "Credential Isolation, Devcontainers & Ephemeral Environments",
+          "file": "learn/13-secret-isolation-and-containers.md",
+          "relatedQuizId": "quiz-ca-3"
+        }
+      ]
+    },
+    {
+      "id": "path-ca-5",
+      "title": "Git Workflows, Worktrees & Recovery",
+      "description": "Clean working trees, atomic staging with git add -p, worktree lifecycle, reflog recovery, rebasing, and hook guardrails.",
+      "icon": "merge_type",
+      "topics": [
+        {
+          "id": "topic-ca-5-1",
+          "title": "Git Worktree Mastery, Clean Trees & Atomic Staging",
+          "file": "learn/14-git-worktrees-and-atomic-staging.md",
+          "relatedQuizId": "quiz-ca-4",
+          "relatedExtraIds": [
+            "extra-ca-7"
+          ]
+        },
+        {
+          "id": "topic-ca-5-2",
+          "title": "Checkpoints, reflog Recovery, Rebasing & Git Hooks",
+          "file": "learn/15-rollback-rebasing-and-git-hooks.md",
+          "relatedQuizId": "quiz-ca-4"
+        }
+      ]
+    },
+    {
+      "id": "path-ca-6",
+      "title": "Commit Hygiene & Pull Request Craft",
+      "description": "Splitting mega-commits, why-first commit messages, PR sizing, gh verification evidence, and fresh-context self-reviews.",
+      "icon": "rate_review",
+      "topics": [
+        {
+          "id": "topic-ca-6-1",
+          "title": "Commit Hygiene: Splitting Diffs, Why-First Messages & Guardrails",
+          "file": "learn/16-commit-hygiene-and-attribution.md",
+          "relatedQuizId": "quiz-ca-4",
+          "relatedExtraIds": [
+            "extra-ca-7"
+          ]
+        },
+        {
+          "id": "topic-ca-6-2",
+          "title": "Pull Request Craft: Sizing, gh Evidence & Fresh-Context Reviews",
+          "file": "learn/17-pull-request-craft-and-reviews.md",
+          "relatedQuizId": "quiz-ca-4",
+          "relatedExtraIds": [
+            "extra-ca-7"
+          ]
         }
       ]
     }
@@ -157,6 +252,36 @@
       "unlockAfterPathId": null,
       "externalUrl": "https://antigravity.google/docs",
       "file": null
+    },
+    {
+      "id": "extra-ca-6",
+      "title": "Context Budgeting & Sandbox Hardening Cheat Sheet",
+      "summary": "Quick-reference .claudeignore/.geminiignore templates, context recovery matrix, and 5-point sandbox hardening checklist.",
+      "type": "USE_CASE",
+      "tags": [
+        "ContextEngineering",
+        "Sandbox",
+        "CheatSheet"
+      ],
+      "tier": "FREE",
+      "unlockAfterPathId": null,
+      "externalUrl": null,
+      "file": "extra/context-and-sandbox-cheatsheet.md"
+    },
+    {
+      "id": "extra-ca-7",
+      "title": "Git, Commit & PR Operator Playbook",
+      "summary": "Copy-pasteable worktree commands, atomic commit prompts, fresh-context PR review prompts, and pre-PR audit checklist.",
+      "type": "USE_CASE",
+      "tags": [
+        "Git",
+        "Commits",
+        "PullRequests"
+      ],
+      "tier": "FREE",
+      "unlockAfterPathId": null,
+      "externalUrl": null,
+      "file": "extra/git-commit-pr-playbook.md"
     }
   ],
   "quizzes": [
@@ -175,6 +300,22 @@
       "timeLimitMinutes": 5,
       "passPercentage": 75,
       "file": "quiz/extensibility-and-orchestration-quiz.md"
+    },
+    {
+      "id": "quiz-ca-3",
+      "title": "Context Engineering & Sandboxing Mastery",
+      "questionCount": 5,
+      "timeLimitMinutes": 5,
+      "passPercentage": 75,
+      "file": "quiz/context-and-sandbox-quiz.md"
+    },
+    {
+      "id": "quiz-ca-4",
+      "title": "Git Workflows, Commits & PR Mastery",
+      "questionCount": 5,
+      "timeLimitMinutes": 5,
+      "passPercentage": 75,
+      "file": "quiz/git-and-pr-mastery-quiz.md"
     }
   ]
 }
