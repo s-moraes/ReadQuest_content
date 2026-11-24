@@ -1,5 +1,5 @@
 {
-  "version": 17,
+  "version": 18,
   "subjects": [
     {
       "id": "system-design",
@@ -46,8 +46,8 @@
     {
       "id": "postgresql",
       "title": "Mastering PostgreSQL: Architecture & Practice",
-      "description": "Object-relational architecture, MVCC concurrency, advanced indexing, hybrid JSONB models, PostGIS geospatial, and cluster scaling.",
-      "version": 1,
+      "description": "Object-relational architecture, MVCC, vacuum & locks, EXPLAIN query tuning, PgBouncer, partitioning, RLS, and pgvector hybrid search.",
+      "version": 2,
       "path": "content/postgresql/subject.json"
     },
     {

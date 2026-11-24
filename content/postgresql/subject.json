@@ -1,7 +1,7 @@
 {
   "id": "postgresql",
   "title": "Mastering PostgreSQL: Architecture & Practice",
-  "version": 1,
+  "version": 2,
   "assets": [],
   "path": [
     {
@@ -67,6 +67,75 @@
           "title": "Scaling, Replication & Production Deployment",
           "file": "learn/07-scaling-and-deployment.md",
           "relatedQuizId": "quiz-pg-2"
+        }
+      ]
+    },
+    {
+      "id": "path-pg-3",
+      "title": "Engine Internals, Vacuum & Lock Safety",
+      "description": "Autovacuum, dead tuples, HOT updates, XID wraparound prevention, lock queues, and zero-downtime DDL.",
+      "icon": "settings",
+      "topics": [
+        {
+          "id": "topic-pg-3-1",
+          "title": "Autovacuum, Dead Tuples, HOT Updates & XID Wraparound",
+          "file": "learn/08-vacuum-bloat-and-xid-wraparound.md",
+          "relatedQuizId": "quiz-pg-3",
+          "relatedExtraIds": [
+            "extra-pg-7"
+          ]
+        },
+        {
+          "id": "topic-pg-3-2",
+          "title": "Lock Hierarchy, Deadlocks & Zero-Downtime DDL",
+          "file": "learn/09-locks-deadlocks-and-zero-downtime-ddl.md",
+          "relatedQuizId": "quiz-pg-3",
+          "relatedExtraIds": [
+            "extra-pg-6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-pg-4",
+      "title": "Query Tuning, Pooling & Observability",
+      "description": "Reading EXPLAIN (ANALYZE, BUFFERS), join algorithms, PgBouncer pooling modes, pg_stat_statements, and memory tuning.",
+      "icon": "speed",
+      "topics": [
+        {
+          "id": "topic-pg-4-1",
+          "title": "Reading EXPLAIN (ANALYZE, BUFFERS) & Join Strategies",
+          "file": "learn/10-explain-analyze-and-query-tuning.md",
+          "relatedQuizId": "quiz-pg-4",
+          "relatedExtraIds": [
+            "extra-pg-6"
+          ]
+        },
+        {
+          "id": "topic-pg-4-2",
+          "title": "Connection Pooling, pg_stat_statements & Memory Tuning",
+          "file": "learn/11-connection-pooling-and-memory-tuning.md",
+          "relatedQuizId": "quiz-pg-4"
+        }
+      ]
+    },
+    {
+      "id": "path-pg-5",
+      "title": "Partitioning, Security & Hybrid Vector Search",
+      "description": "Declarative partitioning, instant data retention, multi-tenant Row-Level Security (RLS), and pgvector hybrid search.",
+      "icon": "layers",
+      "topics": [
+        {
+          "id": "topic-pg-5-1",
+          "title": "Declarative Partitioning, Pruning & Fast Retention",
+          "file": "learn/12-declarative-partitioning-and-retention.md",
+          "relatedQuizId": "quiz-pg-4"
+        },
+        {
+          "id": "topic-pg-5-2",
+          "title": "Multi-Tenant Row-Level Security & pgvector Hybrid Search",
+          "file": "learn/13-row-level-security-and-pgvector.md",
+          "relatedQuizId": "quiz-pg-4"
         }
       ]
     }
@@ -146,6 +215,36 @@
       "unlockAfterPathId": null,
       "externalUrl": "https://www.postgresql.org/docs/current/",
       "file": null
+    },
+    {
+      "id": "extra-pg-6",
+      "title": "Production Incident Playbook: CPU, Locks & WAL Bloat",
+      "summary": "Diagnostic queries for lock contention, CPU spikes, and inactive replication slots retaining WAL segments.",
+      "type": "USE_CASE",
+      "tags": [
+        "Troubleshooting",
+        "Locks",
+        "Observability"
+      ],
+      "tier": "FREE",
+      "unlockAfterPathId": null,
+      "externalUrl": null,
+      "file": "extra/postgres-incident-playbook.md"
+    },
+    {
+      "id": "extra-pg-7",
+      "title": "Backups & Point-in-Time Recovery (PITR) Internals",
+      "summary": "How physical base backups and continuous WAL archiving enable exact-second database recovery.",
+      "type": "CURIOSITY",
+      "tags": [
+        "PITR",
+        "Backups",
+        "WAL"
+      ],
+      "tier": "FREE",
+      "unlockAfterPathId": null,
+      "externalUrl": null,
+      "file": "extra/backup-and-pitr-recovery.md"
     }
   ],
   "quizzes": [
@@ -164,6 +263,22 @@
       "timeLimitMinutes": 5,
       "passPercentage": 75,
       "file": "quiz/postgresql-advanced-quiz.md"
+    },
+    {
+      "id": "quiz-pg-3",
+      "title": "Vacuum, Locks & Zero-Downtime DDL",
+      "questionCount": 5,
+      "timeLimitMinutes": 5,
+      "passPercentage": 75,
+      "file": "quiz/internals-vacuum-and-locks-quiz.md"
+    },
+    {
+      "id": "quiz-pg-4",
+      "title": "Query Tuning, Pooling, Partitioning & pgvector",
+      "questionCount": 5,
+      "timeLimitMinutes": 5,
+      "passPercentage": 75,
+      "file": "quiz/tuning-partitioning-and-vector-quiz.md"
     }
   ]
 }
