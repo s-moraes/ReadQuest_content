@@ -1,0 +1,300 @@
+{
+  "id": "design-patterns",
+  "title": "Software Design Patterns",
+  "version": 13,
+  "assets": [],
+  "path": [
+    {
+      "id": "pattern-categories-foundations",
+      "title": "Pattern Foundations: Creational vs Structural vs Behavioral",
+      "description": "Understand what design patterns are, how the Gang of Four classified them, and when to apply Creational, Structural, or Behavioral patterns.",
+      "icon": "hub",
+      "topics": [
+        {
+          "id": "dp-01-what-are-design-patterns",
+          "title": "What Are Design Patterns & Why They Matter",
+          "file": "learn/01-what-are-design-patterns.md",
+          "relatedQuizId": "quiz-pattern-categories",
+          "relatedExtraIds": [
+            "gof-history"
+          ]
+        },
+        {
+          "id": "dp-02-creational-vs-structural-vs-behavioral",
+          "title": "Creational vs Structural vs Behavioral",
+          "file": "learn/02-creational-vs-structural-vs-behavioral.md",
+          "relatedQuizId": "quiz-pattern-categories",
+          "relatedExtraIds": [
+            "checkout-three-categories"
+          ]
+        },
+        {
+          "id": "dp-03-choosing-the-right-pattern",
+          "title": "Choosing the Right Pattern & Avoiding Over-Engineering",
+          "file": "learn/03-choosing-the-right-pattern.md",
+          "relatedQuizId": "quiz-pattern-categories",
+          "relatedExtraIds": [
+            "checkout-three-categories"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "creational-patterns",
+      "title": "Creational Design Patterns",
+      "description": "Master all five GoF Creational patterns: Singleton, Factory Method, Abstract Factory, Builder, and Prototype.",
+      "icon": "account_tree",
+      "topics": [
+        {
+          "id": "dp-04-singleton",
+          "title": "Singleton Pattern",
+          "file": "learn/04-singleton-pattern.md",
+          "relatedQuizId": "quiz-creational-patterns"
+        },
+        {
+          "id": "dp-05-factory-method",
+          "title": "Factory Method Pattern",
+          "file": "learn/05-factory-method-pattern.md",
+          "relatedQuizId": "quiz-creational-patterns",
+          "relatedExtraIds": [
+            "checkout-three-categories"
+          ]
+        },
+        {
+          "id": "dp-06-abstract-factory",
+          "title": "Abstract Factory Pattern",
+          "file": "learn/06-abstract-factory-pattern.md",
+          "relatedQuizId": "quiz-creational-patterns"
+        },
+        {
+          "id": "dp-07-builder",
+          "title": "Builder Pattern",
+          "file": "learn/07-builder-pattern.md",
+          "relatedQuizId": "quiz-creational-patterns"
+        },
+        {
+          "id": "dp-08-prototype",
+          "title": "Prototype Pattern",
+          "file": "learn/08-prototype-pattern.md",
+          "relatedQuizId": "quiz-creational-patterns"
+        }
+      ]
+    },
+    {
+      "id": "structural-patterns",
+      "title": "Structural Design Patterns",
+      "description": "Master all seven GoF Structural patterns: Adapter, Bridge, Composite, Decorator, Facade, Flyweight, and Proxy.",
+      "icon": "swap_horiz",
+      "topics": [
+        {
+          "id": "dp-09-adapter",
+          "title": "Adapter Pattern",
+          "file": "learn/09-adapter-pattern.md",
+          "relatedQuizId": "quiz-structural-patterns",
+          "relatedExtraIds": [
+            "checkout-three-categories"
+          ]
+        },
+        {
+          "id": "dp-10-bridge",
+          "title": "Bridge Pattern",
+          "file": "learn/10-bridge-pattern.md",
+          "relatedQuizId": "quiz-structural-patterns"
+        },
+        {
+          "id": "dp-11-composite",
+          "title": "Composite Pattern",
+          "file": "learn/11-composite-pattern.md",
+          "relatedQuizId": "quiz-structural-patterns"
+        },
+        {
+          "id": "dp-12-decorator",
+          "title": "Decorator Pattern",
+          "file": "learn/12-decorator-pattern.md",
+          "relatedQuizId": "quiz-structural-patterns",
+          "relatedExtraIds": [
+            "checkout-three-categories"
+          ]
+        },
+        {
+          "id": "dp-13-facade",
+          "title": "Facade Pattern",
+          "file": "learn/13-facade-pattern.md",
+          "relatedQuizId": "quiz-structural-patterns"
+        },
+        {
+          "id": "dp-14-flyweight",
+          "title": "Flyweight Pattern",
+          "file": "learn/14-flyweight-pattern.md",
+          "relatedQuizId": "quiz-structural-patterns"
+        },
+        {
+          "id": "dp-15-proxy",
+          "title": "Proxy Pattern",
+          "file": "learn/15-proxy-pattern.md",
+          "relatedQuizId": "quiz-structural-patterns"
+        }
+      ]
+    },
+    {
+      "id": "behavioral-patterns",
+      "title": "Behavioral Design Patterns",
+      "description": "Master all eleven GoF Behavioral patterns: Chain of Responsibility, Command, Interpreter, Iterator, Mediator, Memento, Observer, State, Strategy, Template Method, and Visitor.",
+      "icon": "hub",
+      "topics": [
+        {
+          "id": "dp-16-chain-of-responsibility",
+          "title": "Chain of Responsibility Pattern",
+          "file": "learn/16-chain-of-responsibility-pattern.md",
+          "relatedQuizId": "quiz-behavioral-patterns"
+        },
+        {
+          "id": "dp-17-command",
+          "title": "Command Pattern",
+          "file": "learn/17-command-pattern.md",
+          "relatedQuizId": "quiz-behavioral-patterns"
+        },
+        {
+          "id": "dp-18-interpreter",
+          "title": "Interpreter Pattern",
+          "file": "learn/18-interpreter-pattern.md",
+          "relatedQuizId": "quiz-behavioral-patterns"
+        },
+        {
+          "id": "dp-19-iterator",
+          "title": "Iterator Pattern",
+          "file": "learn/19-iterator-pattern.md",
+          "relatedQuizId": "quiz-behavioral-patterns"
+        },
+        {
+          "id": "dp-20-mediator",
+          "title": "Mediator Pattern",
+          "file": "learn/20-mediator-pattern.md",
+          "relatedQuizId": "quiz-behavioral-patterns"
+        },
+        {
+          "id": "dp-21-memento",
+          "title": "Memento Pattern",
+          "file": "learn/21-memento-pattern.md",
+          "relatedQuizId": "quiz-behavioral-patterns"
+        },
+        {
+          "id": "dp-22-observer",
+          "title": "Observer Pattern",
+          "file": "learn/22-observer-pattern.md",
+          "relatedQuizId": "quiz-behavioral-patterns",
+          "relatedExtraIds": [
+            "checkout-three-categories"
+          ]
+        },
+        {
+          "id": "dp-23-state",
+          "title": "State Pattern",
+          "file": "learn/23-state-pattern.md",
+          "relatedQuizId": "quiz-behavioral-patterns"
+        },
+        {
+          "id": "dp-24-strategy",
+          "title": "Strategy Pattern",
+          "file": "learn/24-strategy-pattern.md",
+          "relatedQuizId": "quiz-behavioral-patterns",
+          "relatedExtraIds": [
+            "checkout-three-categories"
+          ]
+        },
+        {
+          "id": "dp-25-template-method",
+          "title": "Template Method Pattern",
+          "file": "learn/25-template-method-pattern.md",
+          "relatedQuizId": "quiz-behavioral-patterns"
+        },
+        {
+          "id": "dp-26-visitor",
+          "title": "Visitor Pattern",
+          "file": "learn/26-visitor-pattern.md",
+          "relatedQuizId": "quiz-behavioral-patterns"
+        }
+      ]
+    }
+  ],
+  "extras": [
+    {
+      "id": "gof-history",
+      "title": "The Gang of Four & Origins of Design Patterns",
+      "summary": "How Christopher Alexander's 1977 architectural patterns evolved through Smalltalk into the 1994 GoF book.",
+      "type": "HISTORY",
+      "tags": [
+        "History",
+        "GoF",
+        "Architecture"
+      ],
+      "tier": "FREE",
+      "unlockAfterPathId": null,
+      "externalUrl": null,
+      "file": "extra/gof-history.md"
+    },
+    {
+      "id": "checkout-three-categories",
+      "title": "Case Study: All Three Categories in One Checkout Flow",
+      "summary": "See how Factory Method, Adapter, Decorator, Strategy, and Observer collaborate in a single payment pipeline.",
+      "type": "USE_CASE",
+      "tags": [
+        "CaseStudy",
+        "Creational",
+        "Structural",
+        "Behavioral"
+      ],
+      "tier": "FREE",
+      "unlockAfterPathId": null,
+      "externalUrl": null,
+      "file": "extra/checkout-three-categories.md"
+    }
+  ],
+  "quizzes": [
+    {
+      "id": "quiz-pattern-categories",
+      "title": "Creational, Structural & Behavioral Foundations",
+      "relatedPathId": "pattern-categories-foundations",
+      "questionCount": 5,
+      "timeLimitMinutes": 6,
+      "passPercentage": 60,
+      "file": "quiz/pattern-categories-quiz.md"
+    },
+    {
+      "id": "quiz-creational-patterns",
+      "title": "Creational Patterns Mastery",
+      "relatedPathId": "creational-patterns",
+      "questionCount": 10,
+      "timeLimitMinutes": 10,
+      "passPercentage": 60,
+      "file": "quiz/creational-patterns-quiz.md"
+    },
+    {
+      "id": "quiz-structural-patterns",
+      "title": "Structural Patterns Mastery",
+      "relatedPathId": "structural-patterns",
+      "questionCount": 12,
+      "timeLimitMinutes": 12,
+      "passPercentage": 60,
+      "file": "quiz/structural-patterns-quiz.md"
+    },
+    {
+      "id": "quiz-behavioral-patterns",
+      "title": "Behavioral Patterns Mastery",
+      "relatedPathId": "behavioral-patterns",
+      "questionCount": 16,
+      "timeLimitMinutes": 16,
+      "passPercentage": 60,
+      "file": "quiz/behavioral-patterns-quiz.md"
+    },
+    {
+      "id": "quiz-interview-patterns",
+      "title": "Design Patterns Job Interview Prep",
+      "relatedPathId": "pattern-categories-foundations",
+      "questionCount": 15,
+      "timeLimitMinutes": 16,
+      "passPercentage": 70,
+      "file": "quiz/interview-patterns-quiz.md"
+    }
+  ]
+}
